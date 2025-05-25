@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://yun.loktong.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>乐讯通 </title>
+    <meta name="keywords" content="短信公司,短信服务商,短信平台公司,短信接口提供商,短信通道">
+    <meta name="description" content="乐讯通">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="http://yun.loktong.com/tcby.ico" type="image/x-icon">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link href="./index_files/x-admin.css" rel="stylesheet" type="text/css"><link href="./index_files/jquery.contextMenu.min.css" rel="stylesheet" type="text/css"><link href="./index_files/layout.css" rel="stylesheet" type="text/css"><link href="./index_files/layer.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/layui.css" rel="stylesheet">
+    <link href="./index_files/iconfont.css" rel="stylesheet">
+    <link href="./index_files/lxt-user.css" rel="stylesheet">
+    <link href="./index_files/common.css" rel="stylesheet">
+    <script>
+
+        document.ondragstart = function () { return false }; //for image
+
+        document.oncontextmenu = function (e) { return false }; //for right click disable
+
+        document.onkeydown = function (e) {
+
+            if (e.ctrlKey &&
+
+                (e.keyCode === 65 ||
+
+
+
+                    e.keyCode === 73 ||
+
+                    e.keyCode === 74 ||
+
+                    e.keyCode === 80 ||
+
+                    e.keyCode === 83 ||
+
+                    e.keyCode === 85 ||
+
+
+
+                    e.keyCode === 117
+
+                )) {
+
+                return false;
+
+            }
+
+            if (e.keyCode == 18 || e.keyCode == 123) { return false }
+
+        };
+    </script><input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko" data-inspect-config="3"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script>
+    <style>
+        .layui-tab-card > .layui-tab-title .layui-this {
+            color: white;
+            background-color: #1296DB;
+        }
+
+        .layui-tab-card > .layui-tab-title {
+            background-color: #f2f2f2;
+            box-shadow: 1px 1px 3px #888;
+        }
+
+        .layui-layout-admin .layui-side {
+            top: 0;
+            width: 176px;
+        }
+
+        .layui-nav {
+            background-color: #fff;
+        }
+
+            .layui-nav .layui-nav-item {
+                float: right;
+                line-height: 46px;
+            }
+
+            .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+                background-color: #fff;
+            }
+
+        .layui-nav-child {
+            top: 40px;
+        }
+
+        .mytuiguanglogo {
+            position: absolute;
+            left: 42px;
+            top: -3px;
+        }
+    </style>
+
+<link id="layuicss-layer" rel="stylesheet" href="./index_files/layer(1).css" media="all"><style type="text/css">#_copy{align-items:center;background:#4494d5;border-radius:3px;color:#fff;cursor:pointer;display:flex;font-size:13px;height:30px;justify-content:center;position:absolute;width:60px;z-index:1000}#select-tooltip,#sfModal,.modal-backdrop,div[id^=reader-helper]{display:none!important}.modal-open{overflow:auto!important}._sf_adjust_body{padding-right:0!important}.enable_copy_btns_div{position:fixed;width:154px;left:10px;top:45%;background:#e7f1ff;border:2px solid #4595d5;font-weight:600;border-radius:2px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;z-index:5000}.enable_copy_btns_logo{width:100%;background:#4595d5;text-align:center;font-size:12px;color:#e7f1ff;line-height:30px;height:30px}.enable_copy_btns_btn{display:block;width:128px;height:28px;background:#7f5711;border-radius:4px;color:#fff;font-size:12px;border:0;outline:0;margin:8px auto;font-weight:700;cursor:pointer;opacity:.9}.enable_copy_btns_btn:hover{opacity:.8}.enable_copy_btns_btn:active{opacity:1}</style><link id="layuicss-laydate" rel="stylesheet" href="./index_files/laydate.css" media="all"><style>
+      .copy-protection-on #single-article-right,
+      .copy-protection-on {
+        pointer-events: initial !important;
+      }
+      ::-moz-selection {
+        color: #000 !important;
+        background: #accef7 !important;
+      }
+      ::selection {
+        color: #000 !important;
+        background: #accef7 !important;
+      }
+
+      @layer allow-right-click {
+        ::-moz-selection {
+          color: #000 !important;
+          background: #accef7 !important;
+        }
+        ::selection {
+          color: #000 !important;
+          background: #accef7 !important;
+        }
+      }
+    </style></head>
+<body inmaintabuse="1">
+
+    <div class="layui-layout layui-layout-admin">
+        <div class="content-header">
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item layui-user">
+                    <a href="javascript:void(0)" style="padding-right:0px;"><img src="./index_files/male.png" class="layui-nav-img cur-user-photo"></a>
+                </li>
+                <li class="layui-nav-item" id="li_advice" style="cursor:pointer;">
+                    <a href="javascript:void(0)" title="投诉建议" id="complaintadvice" style="color:#000;padding-right:0px;width:30px;">
+                        <img src="./index_files/tousu.png" alt="" style="margin-bottom: 5px;">
+                    </a>
+                </li>
+                
+                <li class="layui-nav-item layui-file" style="cursor:pointer;">
+                    <a href="javascript:void(0)" title="下载中心" style="color:#000;padding-right:0px;width:30px;">
+                        <i class="layui-icon iconfont icon-xiazai3"></i>
+                        <span id="file_tip" style="display:none;" class="layui-badge-dot"></span>
+                    </a>
+                </li>
+                <li class="layui-nav-item layui-message" style="cursor:pointer;">
+                    <a href="javascript:void(0)" title="通知中心" style="color:#000;padding-right:0px;width:30px;">
+                        <i class="layui-icon iconfont icon-tixing"></i>
+                        <span id="message_tip" style="display:none;" class="layui-badge-dot"></span>
+                    </a>
+                </li>
+                <li class="layui-nav-item" style="display:none;margin-right: 13px;" id="li_tuiguang">
+                    <a href="javascript:void(0)" title="推广有礼" onclick="open_tuiguang(&#39;lnk22&#39;)" style="color:#000;padding-right:0px;width:30px;display: inline;">
+                        <i class="layui-icon iconfont icon-tuiguang"></i>
+                    </a>
+                    <img src="./index_files/new.png" alt="" class="mytuiguanglogo">
+                </li>
+
+
+                <li class="layui-nav-item layui-help" style="cursor:pointer;">
+                    <a href="javascript:void(0)" title="帮助与文档" style="color:#000;padding-right:0px;width:100px;">
+                        <i class="layui-icon iconfont icon-APIwendang1"></i>&nbsp;&nbsp;<span style="position:relative;top:-3px;">帮助与文档</span>
+                    </a>
+                </li>
+
+
+
+
+            <span class="layui-nav-bar" style="left: 1198px; top: 43px; width: 0px; opacity: 0;"></span></ul>
+            <div class="lxt-info" style="display: none;">
+                <div class="lxt-header">
+                    <div class="lxt-header-up">
+                        <img src="./index_files/male.png" alt="" class="cur-user-photo">
+                        <div class="lxt-header-up-title">
+                            <label class="cur-user-name" style="color:#e4393c">18066432652</label>
+                            <label class="cur-user-agent">普通用户</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="lxt-body" id="div_services">
+                    <a href="javascript:void(0)">
+                        客户经理信息
+                    </a>
+                    <a href="javascript:void(0)" class="lxt-body-kf">
+                        <i class="layui-icon iconfont icon-zhanghu"></i>
+                        <span id="sn_name">陈晨</span>
+                    </a>
+                    <a href="javascript:void(0)" class="lxt-body-phone">
+                        <i class="layui-icon iconfont icon-shouji"></i>
+                        <span id="sn_phone">18633081384</span>
+                    </a>
+                    <a href="javascript:void(0)" class="lxt-body-qq" style="display: none;">
+                        <i class="layui-icon iconfont icon-qq2"></i>
+                        <span id="sn_qq"></span>
+                    </a>
+                    <a href="javascript:void(0)" class="lxt-body-wx" style="display: none;">
+                        <i class="layui-icon iconfont icon-weixin1"></i>
+                        <img id="gzh" src="http://yun.loktong.com/" alt="">
+                    </a>
+                </div>
+                <div class="lxt-fotter">
+                    <div class="sc">
+                        <a href="javascript:void(0)" class="out" id="login_out" onclick="LoginOut()">退出登录</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lxt-message" style="display: none;">
+                <div class="lxt-message-header">
+                    通知中心
+                </div>
+                <div class="lxt-message-body"></div>
+                <div class="lxt-message-footer">
+                    <a href="javascript:void(0)" id="message_more">查看更多</a>
+                </div>
+            </div>
+            <div class="lxt-file">
+                <div class="lxt-file-header">
+                    下载中心
+                </div>
+                <div class="lxt-file-body"></div>
+                <div class="lxt-file-footer">
+                    <a href="javascript:void(0)" id="file_more">查看更多</a>
+                </div>
+            </div>
+            <div class="lxt-help" style="display: none;">
+                <div class="lxt-help-header">
+                    帮助与文档
+                </div>
+                <div class="lxt-help-body">
+                </div>
+                <div class="lxt-help-footer">
+                    <a href="javascript:void(0)" onclick="showChargeTip()"><i class="layui-icon iconfont icon-tishi"></i>&nbsp;&nbsp;充值说明</a>
+                </div>
+                <div class="lxt-help-footer">
+                    <a href="http://yun.loktong.com/book/index.html" target="_Blank"><i class="layui-icon iconfont icon-APIwendang1"></i>&nbsp;&nbsp;API接入指南</a>
+</div>
+                <div class="lxt-help-footer">
+                    <a href="javascript:void(0)" id="help"><i class="layui-icon iconfont icon-bangzhu1"></i>&nbsp;&nbsp; 常见问题</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-side   x-side" style="background-color:#e5e5e5;">
+            <div class="new_index">
+                <div class="logo">
+                    <img src="./index_files/logo2.png" alt="Logo" style="width: 150px;height: 45px;">
+                </div>
+                <div class="menu_box">
+                    <ul class="bigtile">
+                        <li class="newlefy moren_box">
+                            <a href="javascript:;" id="lnk0" style="color: rgb(255, 255, 255);">
+                                <i class="layui-icon iconfont icon-kongzhitai"></i>
+                                <cite>控制台</cite>
+                            </a>
+                        </li>
+                        <li class="newlefy">
+                            <a href="javascript:;" id="lnk1" data-type="text" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon iconfont icon-text_tool"></i>
+                                <cite>文字短信</cite>
+                            </a>
+                        </li>
+                        <li class="newlefy">
+                            <a href="javascript:;" class="" id="lnk8" data-type="imagetext" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon iconfont icon-tuwen"></i>
+                                <cite>图文彩信</cite>
+                            </a>
+                        </li>
+                        <li class="newlefy">
+                            <a href="javascript:;" id="lnk11" data-type="video" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>视频短信</cite>
+                            </a>
+                        </li>
+                         <li class="newlefy">
+                            <a href="javascript:;" id="lnk11" data-type="video" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>全国接码</cite>
+                            </a>
+                        </li>
+                         <li class="newlefy">
+                            <a href="javascript:;" id="lnk11" data-type="video" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>云端计数器</cite>
+                            </a>
+                        </li>
+                         <li class="newlefy">
+                            <a href="javascript:;" id="lnk11" data-type="video" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>全球数据</cite>
+                            </a>
+                        </li>
+                         <li class="newlefy">
+                            <a href="javascript:;" id="lnk11" data-type="video" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>国内外固话</cite>
+                            </a>
+                        </li>
+                         <li class="newlefy">
+                            <a href="javascript:;" id="lnk11" data-type="video" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>飞科轰炸机</cite>
+                            </a>
+                        </li>
+                         <li class="newlefy">
+                            <a href="javascript:;" id="lnk11" data-type="video" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>AI机器人</cite>
+                            </a>
+                        </li>
+                         <li class="newlefy">
+                            <a href="javascript:;" id="lnk11" data-type="video" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>GT助手</cite>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="newlefy">
+                            <a href="javascript:;" id="lnk9" data-type="voice" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon"></i>
+                                <cite>语音短信</cite>
+                            </a>
+                        </li>
+
+                        <li class="newlefy">
+                            <a href="javascript:;" id="lnk10" data-type="internation">
+                                <i class="layui-icon"></i>
+                                <cite>国际短信</cite>
+                            </a>
+                        </li>
+                        <li class="newlefy">
+                            <a href="javascript:;" id="lnk12" data-type="shanxin" style="color: rgb(140, 153, 173);">
+                                <i class="layui-icon iconfont icon-shandianfahuo"></i>
+                                <cite>弹屏闪信</cite>
+                            </a>
+                        </li>
+                        <li class="newlefy">
+                            <a href="javascript:;" class="" id="lnk4">
+                                <i class="layui-icon iconfont icon-icon-test"></i>
+                                <cite>400号码集</cite>
+                            </a>
+                        </li>
+                        <li class="newlefy">
+                            <a href="javascript:;" class="" id="lnk13">
+                                <i class="layui-icon iconfont icon-chanpin"></i>
+                                <cite>其它产品</cite>
+                            </a>
+                        </li>
+                        <li class="newlefy">
+                            <a href="javascript:;" id="lnk2">
+                                <i class="layui-icon iconfont icon-yingyong2"></i>
+                                <cite>通讯工具</cite>
+                            </a>
+                        </li>
+                        <!-- <li class="newlefy">
+                             <a href="javascript:;" class="" id="lnk20">
+                                 <i class="layui-icon iconfont icon-shangcheng"></i>
+                                 <cite>积分商城</cite>
+                             </a>
+                         </li>
+                        <li class="newlefy">
+                                 <a href="javascript:;" class="" id="lnk19">
+                                     <i class="layui-icon iconfont icon-APIguanli"></i>
+                                     <cite>API短信</cite>
+                                 </a>
+                             </li> -->
+
+                        <li class="newlefy" id="li_agent" style="display:none;">
+                            <a href="javascript:;" id="lnk18">
+                                <i class="layui-icon iconfont icon-daili"></i>
+                                <cite>下级代理</cite>
+                            </a>
+                        </li>
+
+                        <li class="newlefy">
+                            <a href="javascript:;" class="" id="lnk6">
+                                <i class="layui-icon iconfont icon-caiwuguanli"></i>
+                                <cite>财务管理</cite>
+                            </a>
+                        </li>
+                        <li class="newlefy">
+                            <a href="javascript:;" class="" id="lnk5">
+                                <i class="layui-icon"></i>
+                                <cite>系统管理</cite>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newleft" style="display:none">
+                <ul class="right_small" lay-filter="side">
+                    
+                    <li class="amxl_content lnk1 ltitle" style="display: none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            文字短信
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk1 second sec product" style="display: none;">
+                        <a href="javascript:;" style="color:#000;" _href="/Product/consoleText?type=text" id="83">
+                            <cite>产品总览</cite>
+                        </a>
+                    </li>
+
+                    <li class="amxl_content lnk1 second" id="second13" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>短信设置</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk1 link1" id="second131" style="display: none;">
+                        <ul class="send_xaim">
+
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SignManage/Sign?type=text" id="21">
+                                    <i class="layui-icon iconfont icon-qianming"></i><cite>签名管理</cite>
+                                </a>
+                            </li>
+                            
+                            <li class="cs">
+                                <a href="javascript:;" _href="/CustomerTemplate/Index?type=text" id="33">
+                                    <i class="layui-icon iconfont icon-mobanguanli"></i><cite>模板管理</cite>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk1 second" id="second11" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>发送管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk1" id="second111" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SendTask/Index" id="11">
+                                    <i class="layui-icon iconfont icon-duanxin-cehua-xinxixiangqing-copy"></i><cite>会员通知</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SendTask/MemberMarketing" id="84">
+                                    <i class="layui-icon iconfont icon-yingxiao"></i><cite>会员营销</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SendTask/TuiGuang" id="301">
+                                    <i class="layui-icon iconfont icon-xuanchuantuiguang"></i><cite>推广短信</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SendTask/MoreSend" id="12">
+                                    <i class="layui-icon iconfont icon-params"></i><cite>变量通知</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Cycle/Index" id="107">
+                                    <i class="layui-icon iconfont icon-xunhuan"></i><cite>循环短信</cite>
+                                </a>
+                            </li>
+							<li class="cs">
+                                <a href="javascript:;" _href="/SendTask/SecurityCode" id="129">
+                                    <i class="layui-icon iconfont icon-ad80-copy"></i><cite>验证码</cite>
+                                </a>
+                            </li>
+                           
+
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk1 second" id="second12" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>统计管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk1 link1" id="second121" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SendTask/WaitAudit" id="13">
+                                    <i class="layui-icon iconfont icon-tijiao"></i><cite>提交记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SendTask/OkSend" id="15">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SendTask/ReplyReport" id="31">
+                                    <i class="layui-icon iconfont icon-huifu-quanbu"></i><cite>上行回复</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SendTask/StatusReport" id="32">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+							<li class="cs">
+                                <a href="javascript:;" _href="/SendTask/ErrorCode" id="533">
+                                    <i class="layui-icon iconfont icon-xinxi"></i><cite>返回代码说明</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+
+
+                    
+                    <li class="amxl_content lnk8 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            图文彩信
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk8 second sec product" style="display: none;">
+                        <a href="javascript:;" style="color:#000;" _href="/Product/consoleOther?type=imagetext" id="83">
+                            <cite>产品总览</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk8 second" id="second33" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>彩信素材</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk8 link8" id="second331" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ImageText/Fodder" id="96">
+                                    <i class="layui-icon iconfont icon-sucai"></i><cite>素材管理</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk8 second" id="second31" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>发送管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk8 link8" id="second311" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ImageText/index" id="95">
+                                    <i class="layui-icon iconfont icon-fasong"></i><cite>图文彩信</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk8 second" id="second32" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>统计管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk8 link8" id="second321" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ImageText/WaitAudit" id="103">
+                                    <i class="layui-icon iconfont icon-tijiao"></i><cite>提交记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ImageText/OkSend" id="97">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ImageText/StatusReport" id="99">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk9 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            语音短信
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk9 second sec product" style="display:none;">
+                        <a href="javascript:;" style="color:#000;" _href="/Product/consoleOther?type=voice" id="83">
+                            <cite>产品总览</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk9 second" id="second43" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>短信设置</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk9 link9" id="second431" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SignManage/Sign?type=voice" id="21">
+                                    <i class="layui-icon iconfont icon-qianming"></i><cite>签名管理</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/CustomerTemplate/Index?type=voice" id="33">
+                                    <i class="layui-icon iconfont icon-mobanguanli"></i><cite>模板管理</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk9 second" id="second41" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>发送管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk9 link9" id="second411" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Voice/WaitAudit" id="105">
+                                    <i class="layui-icon iconfont icon-tijiao"></i><cite>提交记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Voice/OkSend" id="106">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Voice/StatusReport" id="119">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk10 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            国际短信
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk10 second sec product" style="display:none;">
+                        <a href="javascript:;" style="color:#000;" _href="/Product/consoleOther?type=internation" id="83">
+                            <cite>产品总览</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk10 second" id="second53" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>短信设置</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk10 link10" id="second531" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SignManage/Sign?type=internation" id="21">
+                                    <i class="layui-icon iconfont icon-qianming"></i><cite>签名管理</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/CustomerTemplate/Index?type=internation" id="33">
+                                    <i class="layui-icon iconfont icon-mobanguanli"></i><cite>模板管理</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Internation/rate" id="143">
+                                    <i class="layui-icon iconfont icon-shanghufeishuaiguanli"></i><cite>国际费率</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk10 second" id="second51" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>发送管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk10" id="second511" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Internation/Index" id="92">
+                                    <i class="layui-icon iconfont icon-fasong"></i><cite>国际短信</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Internation/comsume" id="145">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>消费明细</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk10 second" id="second52" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>统计管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk10 link10" id="second521" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Internation/WaitAudit" id="94">
+                                    <i class="layui-icon iconfont icon-tijiao"></i><cite>提交记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Internation/OkSend" id="96">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Internation/StatusReport" id="98">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk11 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            视频短信
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk11 second sec product" style="display:none;">
+                        <a href="javascript:;" style="color:#000;" _href="/Product/consoleOther?type=video" id="83">
+                            <cite>产品总览</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk11 second" id="second73" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>视频建设</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk11 link1" id="second731" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SignManage/Sign?type=video" id="21">
+                                    <i class="layui-icon iconfont icon-qianming"></i><cite>签名管理</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Video/CommonVideo" id="94">
+                                    <i class="layui-icon iconfont icon-moban"></i><cite>模板样例</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Video/VideoMode" id="93">
+                                    <i class="layui-icon iconfont icon-mobanguanli"></i><cite>模板管理</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk11 second" id="second71" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>发送管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk11" id="second711" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Video/Index" id="85">
+                                    <i class="layui-icon iconfont icon-fasong"></i><cite>视频短信</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk11 second" id="second72" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>统计管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk11 link1" id="second721" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Video/WaitAudit" id="86">
+                                    <i class="layui-icon iconfont icon-tijiao"></i><cite>提交记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Video/OkSend" id="88">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Video/StatusReport" id="90">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk12 ltitle" style="display: none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            弹屏闪信
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk12 second sec product" style="display: none;">
+                        <a href="javascript:;" style="color:#000;" _href="/Product/consoleOther?type=shanxin" id="83">
+                            <cite>产品总览</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk12 second" id="second200" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>短信设置</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk12 link12" id="second2001" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/SignManage/Sign?type=shanxin" id="21">
+                                    <i class="layui-icon iconfont icon-qianming"></i><cite>签名管理</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/CustomerTemplate/Index?type=shanxin" id="33">
+                                    <i class="layui-icon iconfont icon-mobanguanli"></i><cite>模板管理</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk12 second" id="second201" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>发送管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk12" id="second2011" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ShanXin/Send" id="203">
+                                    <i class="layui-icon iconfont icon-fasong"></i><cite>闪信短信</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk12 second" id="second202" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>统计管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk12 link12" id="second2021" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ShanXin/WaitAudit" id="204">
+                                    <i class="layui-icon iconfont icon-tijiao"></i><cite>提交记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ShanXin/OkSend" id="205">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ShanXin/StatusReport" id="207">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+
+                    <li class="amxl_content lnk4 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            400号码集
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk4" style="display:none;" id="second231">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="" target="_blank" id="131" _href="">
+                                    <i class="layui-icon iconfont icon-icon-test" style="top: 3px;"></i><cite>选号平台</cite>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk13 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            其他产品
+                        </a>
+                    </li>
+
+
+
+                    <li class="amxl_content lnk13" style="display:none;" id="second831">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="http://www.loktong.com/product/wlwk" target="_blank" id="803" _href="">
+                                    <i class="layui-icon iconfont icon-wulianwang" style="top: 3px;"></i><cite>物联网卡</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk13" style="display:none;" id="second831">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="" target="_blank" id="810" _href="">
+                                    <i class="layui-icon iconfont icon-shiwuzhongxin_wangzhanbeian" style="top: 3px;"></i><cite>网站建设</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk13" style="display:none;" id="second821">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="" target="_blank" id="802" _href="">
+                                    <i class="layui-icon iconfont icon-jiance" style="top: 3px;"></i><cite>空号检测</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="amxl_content lnk13" style="display:none;" id="second821">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="" target="_blank" id="811" _href="">
+                                    <i class="layui-icon iconfont icon-yunfuwuqi1" style="top: 3px;"></i><cite>云服务器</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    <li class="amxl_content lnk13" style="display:none;" id="second841">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="" target="_blank" id="804" _href="">
+                                    <i class="layui-icon iconfont icon-jiqiren" style="top: 3px;"></i><cite>小I语音机器人</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk2 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            通讯工具
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk2 second" id="second21" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>通讯录</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk2 link2" id="second211" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" id="41" _href="/BookTree/index">
+                                    <i class="layui-icon iconfont icon-tongxunlu" style="top: 3px;"></i><cite>通讯录</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk2 second" id="second22" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>应用工具</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk2 link2" id="second221" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ApplicationTools/ShortLink" id="23">
+                                    <i class="layui-icon iconfont icon-lianjie1"></i><cite>短链接生成</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ApplicationTools/HMFL" id="127">
+                                    <img src="./index_files/号码分流.png" alt="号码分流"> <cite style="margin-left: 0px;">号码分流</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ApplicationTools/VCard" id="128">
+                                    <i class="layui-icon"></i><cite>VCF文件处理</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/ApplicationTools/NumberOprate" id="130">
+                                    <i class="layui-icon iconfont icon-caozuo"></i><cite>号码操作</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk18 ltitle" style="display: none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            下级代理
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk18 second" id="second141" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>账户管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk18 link18" id="second1411" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Customer/Index" id="51">
+                                    <i class="layui-icon iconfont icon-zhanghu"></i><cite>账户管理</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/Customer/RechargeConsume" id="53">
+                                    <i class="layui-icon iconfont icon-yue"></i><cite>充值消费</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk18 second" id="second142" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>文字短信</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk18 link18" id="second1421" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/Text?type=text&amp;level=1" id="113">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/ReplyReport" id="56">
+                                    <i class="layui-icon iconfont icon-huifu-quanbu"></i><cite>上行回复</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/TextReport" id="57">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk18 second" id="second143" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>图文彩信</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk18 link18" id="second1431" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/ImageText?type=imagetext&amp;level=1" id="114">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/ImageTextReport" id="123">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk18 second" id="second145" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>视频短信</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk18 link18" id="second1451" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/Video?type=video&amp;level=1" id="116">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/VideoReport" id="124">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk18 second" id="second147" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>弹屏闪信</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk18 link18" id="second1471" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/ShanXin?type=shanxin&amp;level=1" id="209">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/ShanXinReport" id="211">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk18 second" id="second144" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>语音短信</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk18 link18" id="second1441" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/Voice?type=voice&amp;level=1" id="115">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="amxl_content lnk18 second" id="second146" style="display: none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>国际短信</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk18 link18" id="second1461" style="display: none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/Internation?type=internation&amp;level=1" id="117">
+                                    <i class="layui-icon iconfont icon-jiludanzilishijilu"></i><cite>发送记录</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/LowLevel/InternationReport" id="125">
+                                    <i class="layui-icon iconfont icon-tongji1"></i><cite>下行报告</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    
+
+                    
+                    <li class="amxl_content lnk6 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            财务管理
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk6 second" id="second151" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>账单明细</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk6" id="second1511" style="display:none;">
+                        <ul class="send_xaim">
+                                    <li class="cs">
+                                        <a href="javascript:;" _href="/balance/index" id="144">
+                                            <i class="layui-icon iconfont icon-yue"></i><cite>账户流水</cite>
+                                        </a>
+                                    </li>
+
+                            <li class="cs">
+                                <a href="javascript:;" _href="/AccountChanges/index" id="61">
+                                    <i class="layui-icon iconfont icon-zijinliushui"></i><cite>产品流水</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                            <li class="amxl_content lnk6 second" id="second153" style="display:none;">
+                                <a href="javascript:;" style="color:#000;">
+                                    <i class="layui-icon show"></i>
+                                    <i class="layui-icon hide" style="display:none"></i>
+                                    <cite>财务统计</cite>
+                                </a>
+                            </li>
+                            <li class="amxl_content lnk6" id="second1531" style="display:none;">
+                                <ul class="send_xaim">
+                                    <li class="cs">
+                                        <a href="javascript:;" _href="/AccountChanges/ConsumeFlow" id="91">
+                                            <i class="layui-icon iconfont icon-liuliang"></i><cite>产品账单</cite>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+
+                    
+
+                    
+                    <li class="amxl_content lnk5 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            系统管理
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk5 second" id="second161" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>基本资料</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk5" id="second1611" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" id="71" _href="/System/userinfo">
+                                    <i class="layui-icon"></i><cite>基本资料</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk5 second" id="second162" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>认证管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk5" id="second1621" style="display:none;">
+                        <ul class="send_xaim">
+
+                            <li class="cs">
+                                <a href="javascript:;" id="75" _href="/Authentication/PersonalAuthentication">
+                                    <i class="layui-icon iconfont icon-renzheng"></i><cite>认证信息</cite>
+                                </a>
+                            </li>
+
+                            <li class="cs">
+                                <a href="javascript:;" id="300" _href="/Authentication/UserFile">
+                                    <i class="layui-icon iconfont icon-sucai"></i><cite>其它认证</cite>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk5 second" id="second163" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>密码管理</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk5" id="second1631" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/System/PasswordSet" id="74">
+                                    <i class="layui-icon iconfont icon-ziyuanxhdpi"></i><cite>密码重置</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk5 second" id="second164" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>余额及授权</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk5" id="second1641" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/System/BalanceRemind" id="82">
+                                    <i class="layui-icon iconfont icon-yue"></i><cite>余额提醒</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/System/IPSecurityAuth" id="77">
+                                    <i class="layui-icon iconfont icon-anquan"></i><cite>IP安全授权</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/System/SensitivityDefend" id="215">
+                                    <i class="layui-icon iconfont icon-minganciguanli"></i><cite>敏感防护</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/System/SendLimit" id="216">
+                                    <i class="layui-icon iconfont icon-xianliu"></i><cite>发送限流</cite>
+                                </a>
+                            </li>
+							  <li class="cs">
+                                <a href="javascript:;" _href="/System/blacklist" id="302">
+                                    <i class="layui-icon iconfont icon-xinxifenliu"></i><cite>防骚扰号码</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="amxl_content lnk5 second" id="second165" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>文件下载</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk5" id="second1651" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" id="118" _href="/filetask/index">
+                                    <i class="layui-icon iconfont icon-xiazai "></i><cite>文件下载</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk7 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            帮助中心
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk7" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/help/index" id="72">
+                                    <i class="layui-icon"></i><cite>常见问题</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="amxl_content lnk19 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            API文档
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk19 second" id="second191" style="display:none;">
+                        <a href="javascript:;" style="color:#000;">
+                            <i class="layui-icon show"></i>
+                            <i class="layui-icon hide" style="display:none"></i>
+                            <cite>API文档</cite>
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk19" style="display:none;" id="second1911">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/API/Text" id="73">
+                                    <i class="layui-icon iconfont icon-text_tool"></i><cite style="margin-left: 13px;">文字API</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/API/ImageText" id="112">
+                                    <i class="layui-icon iconfont icon-tuwen"></i><cite style="margin-left: 13px;">彩信API</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/API/Video" id="110">
+                                    <i class="layui-icon"></i><cite>视频API</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/API/ShanXin" id="208">
+                                    <i class="layui-icon iconfont icon-shandianfahuo"></i><cite style="margin-left: 13px;">闪信API</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/API/Voice" id="109">
+                                    <i class="layui-icon"></i><cite>语音API</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/API/Internation" id="111">
+                                    <i class="layui-icon"></i><cite>国际API</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    
+
+                            <li class="amxl_content lnk20 ltitle" style="display:none;">
+                                <a href="javascript:;" class="birand" style="color:#000;">
+                                    积分商城
+                                </a>
+                            </li>
+                            <li class="amxl_content lnk20" style="display:none;">
+                                <ul class="send_xaim">
+                                    <li class="cs">
+                                        <a href="javascript:;" _href="/IntegralProduct/Index" id="200">
+                                            <i class="layui-icon iconfont icon-lipin"></i><cite>礼品列表</cite>
+                                        </a>
+                                    </li>
+                                    <li class="cs">
+                                        <a href="javascript:;" _href="/IntegralProduct/Orders" id="201">
+                                            <i class="layui-icon iconfont icon-duihuan"></i><cite>兑换列表</cite>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                    
+
+                    
+                    <li class="amxl_content lnk22 ltitle" style="display:none;">
+                        <a href="javascript:;" class="birand" style="color:#000;">
+                            我的推广
+                        </a>
+                    </li>
+                    <li class="amxl_content lnk22" style="display:none;">
+                        <ul class="send_xaim">
+                            <li class="cs">
+                                <a href="javascript:;" _href="/generalize/index" id="212">
+                                    <i class="layui-icon iconfont icon-tuiguang"></i><cite>推广链接</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/rebate/index" id="213">
+                                    <i class="layui-icon iconfont icon-fanli1"></i><cite>我的返利</cite>
+                                </a>
+                            </li>
+                            <li class="cs">
+                                <a href="javascript:;" _href="/receipt/index" id="214">
+                                    <i class="layui-icon iconfont icon-Present_record"></i><cite>提现记录</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-tab layui-tab-card site-demo-title x-main" lay-filter="x-tab" lay-allowclose="true">
+            <ul class="layui-tab-title">
+                <li class="layui-this" lay-id="0">
+                    控制台
+                    <i class="layui-icon layui-unselect layui-tab-close" style="display: none">ဆ</i>
+                </li>
+            </ul>
+            <div class="layui-tab-content site-demo site-demo-body" style="height: 1056px;">
+                <div class="layui-tab-item layui-show">
+                    <iframe frameborder="0" src="./index_files/console.html" class="x-iframe" name="frmconsole"></iframe>
+                </div>
+            </div>
+        </div>
+
+        
+
+ 
+        <div class="site-mobile-shade">
+        </div>
+    </div>
+
+
+    <!--右侧-->
+    <div class="cndns-right" id="div_kefu">
+
+        <div class="cndns-right-meau meau-sev">
+            <a href="javascript:" class="cndns-right-btn">
+                <span class="demo-icon"></span>
+                <p>
+                    在线<br>
+                    客服
+                </p>
+            </a>
+            <div class="cndns-right-box">
+                <div class="box-border">
+                    <div class="sev-t">
+
+                        <span class="demo-icon layui-icon iconfont icon-kefudianhua"></span>
+                        <p>在线客服<i id="pservicephone">服务电话：18633081384</i></p>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="sev-b">
+                        <h4>选择下列产品马上在线沟通：</h4>
+                        <ul id="zixunUl">
+                            <li><a href="javascript:void(0);" onclick="goSq()">套餐资费</a></li>
+                            <li><a href="javascript:void(0);" onclick="goSq()">付款方式</a></li>
+                            <li><a href="javascript:void(0);" onclick="goSq()">平台操作</a></li>
+                            <li><a href="javascript:void(0);" onclick="goSq()">短信收不到？</a></li>
+                           <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2584470691&amp;site=qq&amp;menu=yes">投诉建议</a></li>
+							<li style="width:200px;"><a href="javascript:void(0);">技术支持：17600227113</a></li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                    <span class="arrow-right"></span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="./index_files/denv.js.下载"></script><script type="text/javascript" src="./index_files/polyfill.min.js.下载"></script><script type="text/javascript" src="./index_files/jquery.min.js.下载"></script><script type="text/javascript" src="./index_files/layui.js.下载"></script><script type="text/javascript" src="./index_files/x-layui.js.下载"></script><script type="text/javascript" src="./index_files/layer.js.下载"></script><script type="text/javascript" src="./index_files/x-admin.js.下载"></script><script type="text/javascript" src="./index_files/jquery.contextMenu.min.js.下载"></script><script type="text/javascript" src="./index_files/shared_layout.js.下载"></script><script type="text/javascript" src="./index_files/Layout.js.下载"></script>
+    <script>
+        init_userinfo();
+    </script>
+    <script id="Back" language="javascript" src="./index_files/SessionKeeper"></script>
+
+    <input type="hidden" id="sqUrl" value="http://p.qiao.baidu.com/cps/chat?siteId=15138784&amp;userId=28635156&amp;siteToken=a76d7f9e27de76a0b1c9e6c98ccc4978&amp;cp=&amp;cr=&amp;cw=%E4%B9%90%E8%AE%AF%E9%80%9A">
+    <input type="hidden" id="uname" value="18066432652">
+    <input type="hidden" id="pushurl" value="http://39.101.200.83:8091">
+    <input type="hidden" id="is_top" value="1">
+    <!-- <script src="/Scripts/jquery.signalR-2.4.1.js"></script> -->
+    <!-- <script src="http://39.101.200.83:8091/signalr/hubs"></script> -->
+    <!-- <script src="~/js/Hub/hubRev.js?v=638733536469126395"></script> -->
+
+
+    <input type="hidden" id="type" value="">
+    <input type="hidden" id="is_send" value="0">
+    
+    <script>
+        function zxzf() {
+            layer.open({
+                type: 1,
+                title: '',
+                fix: false,
+                maxmin: false,
+                resize: false,
+                shadeClose: true,
+                closeBtn: 1,
+                area: ['601px', '721px'],
+                content: '<img style="width:600px;height:720px;" src="/images/zxzf.jpg"/>'
+            });
+        }
+
+    </script>
+
+
+<script src="chrome-extension://onepmapfbjohnegdmfhndpefjkppbjkm/sm.bundle.js" data-pname="supercopy-v3" data-asset-path="https://spc4.s3.ap-east-1.amazonaws.com"></script><ul class="context-menu-list context-menu-root" style="display: none;"><li class="context-menu-item context-menu-icon context-menu-icon-loading"><span>刷新</span></li><li class="context-menu-item context-menu-icon context-menu-icon-quit"><span>关闭1</span></li><li class="context-menu-item context-menu-icon context-menu-icon-quit"><span>关闭其他</span></li><li class="context-menu-item context-menu-icon context-menu-icon-quit"><span>关闭全部</span></li></ul></body><script class="arclck" data-injected="true">document.currentScript.dataset.injected = true;
+  try {
+    let active = true;
+
+    Selection.prototype.removeAllRanges = new Proxy(Selection.prototype.removeAllRanges, {
+      apply(target, self, args) {
+        if (active) {
+          return undefined;
+        }
+        return Reflect.apply(target, self, args);
+      }
+    });
+
+    document.currentScript.addEventListener('remove', () => active = false);
+    document.currentScript.addEventListener('install', () => active = true);
+  }
+  catch (e) {}
+</script><script class="arclck" data-injected="true">document.currentScript.dataset.injected = true;
+  try {
+    const ogs = {
+      removed: false,
+      misc: {}
+    };
+
+    // alert
+    ogs.misc.alert = window.alert;
+    Object.defineProperty(window, 'alert', {
+      get() {
+        return ogs.removed ? ogs.misc.alert : (...args) => console.info('[alert is blocked]', ...args);
+      },
+      set(c) {
+        ogs.misc.alert ||= c;
+      }
+    });
+
+    // unblock contextmenu and more
+    ogs.misc.mp = MouseEvent.prototype.preventDefault;
+    Object.defineProperty(MouseEvent.prototype, 'preventDefault', {
+      get() {
+        return ogs.removed ? ogs.misc.mp : () => {};
+      },
+      set(c) {
+        console.info('a try to overwrite "preventDefault"', c);
+        ogs.misc.mp ||= c;
+      }
+    });
+    Object.defineProperty(MouseEvent.prototype, 'returnValue', {
+      get() {
+        return ogs.removed && 'v' in this ? this.v : true;
+      },
+      set(c) {
+        console.info('a try to overwrite "returnValue"', c);
+        this.v = c;
+      }
+    });
+
+    ogs.misc.cp = ClipboardEvent.prototype.preventDefault;
+    Object.defineProperty(ClipboardEvent.prototype, 'preventDefault', {
+      get() {
+        return ogs.removed ? ogs.misc.cp : () => {};
+      },
+      set(c) {
+        ogs.misc.cp ||= c;
+      }
+    });
+
+    document.currentScript.addEventListener('remove', () => ogs.removed = true);
+    document.currentScript.addEventListener('install', () => ogs.removed = false);
+  }
+  catch (e) {}
+</script></html>
