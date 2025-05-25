@@ -1,0 +1,239 @@
+(function (window) {
+    var klwTools = {
+        tipTimer: null,
+
+        /*
+        * 判断是不是方法类型
+        * obj: 变量
+        */
+        isFunction: function (obj) {
+            return typeof obj === "function";
+        },
+
+        /*
+        * 判断是不是字符串类型
+        * obj: 变量
+        */
+        isString: function (obj) {
+            return typeof obj === "string";
+        },
+
+        /*
+        * 判断是不是数组类型
+        * obj: 变量
+        */
+        isArray: function (obj) {
+            return Object.prototype.toString.call(obj) === "[object Array]";
+        },
+
+        /*
+        * 判断是不是bool值类型
+        * obj: 变量
+        */
+        isBool: function (obj) {
+            return typeof obj === "boolean";
+        },
+
+        /*
+        * 判断是不是数字类型
+        * obj: 变量
+        */
+        isNumber: function (obj) {
+            return typeof obj === "number";
+        },
+
+        //判断正整数 /^[1-9]+[0-9]*]*$/ 
+        isInt: function (obj) {
+            var re = /^[1-9]+[0-9]*]*$/;
+            return re.test(obj);
+        },
+
+        //判断数字
+        isFloat: function (obj) {
+            var re = /^[0-9]+.?[0-9]*$/;
+            return re.test(obj);
+        },
+
+        /*
+        * 判断是不是对象/类
+        * obj: 变量
+        */
+        isObject: function (obj) {
+            return typeof obj === "object";
+        },
+
+        getSession: function (key) {
+            var data = sessionStorage.getItem(key);
+            if (data == undefined || data == null || data == '') {
+                return '';
+            }
+            return data;
+        },
+
+        setSession: function (key, objData) {
+            window.sessionStorage.removeItem(key);
+            if (this.isString(objData)) {
+                window.sessionStorage.setItem(key, objData);
+            } else {
+                window.sessionStorage.setItem(key, JSON.stringify(objData));
+            }
+        },
+
+        getStorage: function (key) {
+            var data = localStorage.getItem(key);
+            if (data == undefined || data == null || data == '') {
+                return '';
+            }
+            return data;
+        },
+        getUrlParaValue: function (name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        },
+        setStorage: function (key, objData) {
+            window.localStorage.removeItem(key);
+            if (this.isString(objData)) {
+                window.localStorage.setItem(key, objData);
+            } else {
+                window.localStorage.setItem(key, JSON.stringify(objData));
+            }
+        },
+        JsonToDateTime: function (jsonDate) {
+            if (jsonDate == undefined || jsonDate.length <= 0) return "";
+            jsonDate = jsonDate.replace(/T/, " ");
+            jsonDate = jsonDate.replace(/-/g, "/");
+            if (jsonDate.indexOf('.') > 0) {
+                jsonDate = jsonDate.substr(0, jsonDate.indexOf('.'));
+            }
+
+            var date = new Date(jsonDate).format("yyyy-MM-dd HH:mm:ss");
+            return date;
+        },
+        JsonToDateTimeymd: function (jsonDate) {
+            if (jsonDate == undefined || jsonDate.length <= 0) return "";
+            jsonDate = jsonDate.replace(/T/, " ");
+            jsonDate = jsonDate.replace(/-/g, "/");
+            if (jsonDate.indexOf('.') > 0) {
+                jsonDate = jsonDate.substr(0, jsonDate.indexOf('.'));
+            }
+            var date = new Date(jsonDate).format("yyyy-MM-dd");
+            return date;
+        },
+        //true表示格式正确
+        checkMobilePhone: function (str) {
+            if (str.match(/^1[3456789]\d{9}$/) == null) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        },
+    };
+    window.KLW_Tools = klwTools;
+})(window);
+
+/**
+ * 获得随机字符串
+ * @param {any} len 长度
+ */
+function randomString(len) {
+    len = len || 32;
+    var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+    var maxPos = $chars.length;
+    var pwd = '';
+    for (var i = 0; i < len; i++) {
+        pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+    }
+    return pwd;
+}
+
+/*
+ * 移除字符串左右两边空格
+ */
+String.prototype.trim = function () {
+    return this.replace(/(^\s*)|(\s*$)/g, "");
+}
+
+/*
+ * 移除字符串左边的空格
+ */
+String.prototype.ltrim = function () {
+    return this.replace(/(^\s*)/g, "");
+}
+
+/*
+ * 移除字符串右边的空格
+ */
+String.prototype.rtrim = function () {
+    return this.replace(/(\s*$)/g, "");
+}
+
+/*
+ * 移除日期字符串里面的 T 
+ */
+Date.prototype.format = function (formatStr) {
+    var date = this;
+    /*  
+    函数：填充0字符  
+    参数：value-需要填充的字符串, length-总长度  
+    返回：填充后的字符串  
+    */
+    var zeroize = function (value, length) {
+        if (!length) {
+            length = 2;
+        }
+        value = new String(value);
+        for (var i = 0, zeros = ''; i < (length - value.length); i++) {
+            zeros += '0';
+        }
+        return zeros + value;
+    };
+    return formatStr.replace(/"[^"]*"|'[^']*'|\b(?:d{1,4}|M{1,4}|yy(?:yy)?|([hHmstT])\1?|[lLZ])\b/g, function ($0) {
+        switch ($0) {
+            case 'd': return date.getDate();
+            case 'dd': return zeroize(date.getDate());
+            case 'ddd': return ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'][date.getDay()];
+            case 'dddd': return ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][date.getDay()];
+            case 'M': return date.getMonth() + 1;
+            case 'MM': return zeroize(date.getMonth() + 1);
+            case 'MMM': return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][date.getMonth()];
+            case 'MMMM': return ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][date.getMonth()];
+            case 'yy': return new String(date.getFullYear()).substr(2);
+            case 'yyyy': return date.getFullYear();
+            case 'h': return date.getHours() % 12 || 12;
+            case 'hh': return zeroize(date.getHours() % 12 || 12);
+            case 'H': return date.getHours();
+            case 'HH': return zeroize(date.getHours());
+            case 'm': return date.getMinutes();
+            case 'mm': return zeroize(date.getMinutes());
+            case 's': return date.getSeconds();
+            case 'ss': return zeroize(date.getSeconds());
+            case 'l': return date.getMilliseconds();
+            case 'll': return zeroize(date.getMilliseconds());
+            case 'tt': return date.getHours() < 12 ? 'am' : 'pm';
+            case 'TT': return date.getHours() < 12 ? 'AM' : 'PM';
+        }
+    });
+}
+
+/*
+ * 验证是不是手机号
+ */
+String.prototype.isPhone = function () {
+    if (!(/^1[345789]\d{9}$/.test(this))) {
+        return false;
+    }
+    return true;
+}
+
+/*
+ * 验证是不是邮箱
+ */
+String.prototype.isEmail = function () {
+    if (!(/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/.test(this))) {
+        return false;
+    }
+    return true;
+}
+
