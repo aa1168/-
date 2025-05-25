@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <title>Ops! 404 错误，页面没有找到</title>
+        <meta property="og:title" content="SUBMAIL - 分秒之间，云联世界">
+        <meta property="og:description" content="赛邮云通信 - 短信，国际短信，彩信，邮件，语音，短网址，短链接">
+        <meta property="og:image" content="https://www.mysubmail.com/libraries/icos/submail.png">
+        <link rel="stylesheet" href="/libraries/css/submail.mdi.css?2.55" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="/libraries_v4/layout/header/index.css">
+        <link rel="stylesheet" href="/libraries_v2/styleSheets/new-base.css?2.55"  type="text/css" />
+        <link rel="stylesheet" href="/libraries_v4/assets/css/bootstrap.min.css?2.55"  type="text/css" />
+        <script src="/libraries/js/submail.mdi.min.js?2.55" type="text/javascript" charset="utf-8"></script>
+        <script src="/libraries/js/base.min.js?2.55" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <script>
+    </script>
+    <body>
+        <!--[if lt IE]>
+    <script type="text/javascript" charset="utf-8">
+        if(window.location.href.indexOf("UpgradeYourBrowser") == '-1'){
+            window.location.href="/welcome/UpgradeYourBrowser";
+        }
+    </script>
+<![endif]-->
+<link rel="stylesheet" href="/libraries_v4/assets/css/reset.css?2.55"  type="text/css" />
+<link rel="stylesheet" href="/libraries_v4/assets/css/global.css?2.55"  type="text/css" />
+<link rel="stylesheet" href="/libraries_v4/assets/iconfont/iconfont.css?2.55"  type="text/css" />
+<link rel="stylesheet" type="text/css" href="/libraries/editor/fonts/icons.css">
+<link rel="stylesheet" href="/libraries_v2/styleSheets/fonts2/iconfont.css?2.55"  type="text/css" />
+<link rel="stylesheet" type="text/css" href="/libraries_v2/styleSheets/global.onlinechat.css?1.2">
+<link rel="stylesheet" type="text/css" href="/libraries_v4/layout/header/index.css">
+
+<script src="/libraries/mdi/js/dropzone.min.js?1.2" type="text/javascript" charset="utf-8"></script>
+<script src="/libraries/js/ga.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="/libraries_v2/scripts/global.onlinechat.js?1.2" type="text/javascript" charset="utf-8"></script>
+<!-- <script src="/libraries_v2/scripts/global.onlinechat.min.js?1.2" type="text/javascript" charset="utf-8"></script> -->
+
+<script src="/libraries_v2/PlugIns/jquery.cookie.js?2.55" type="text/javascript" charset="utf-8"></script>
+<script src="/libraries_v4/layout/header/min/index.min.js" defer type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $(function(){
+        (function ($) {
+            $.getUrlParam = function (name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]); return null;
+            }
+        })(jQuery);
+        var bd_vid = $.getUrlParam("bd_vid");
+        if(bd_vid){
+            $.cookie("bd_vid",bd_vid,{ path:"/",expiress:1})
+        }
+    })
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CSMY7Q6G70"></script>
+<!--360的访问追踪代码1  -->
+<script>
+(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};
+b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);
+s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)
+})(window,document,"script","_qha",568710,false);
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CSMY7Q6G70');
+</script>
+
+<script>!function(g,d,t,e,v,n,s){if(g.gdt)return;v=g.gdt=function(){v.tk?v.tk.apply(v,arguments):v.queue.push(arguments)};v.sv='1.0';v.bt=0;v.queue=[];n=d.createElement(t);n.async=!0; n.src=e;s=d.getElementsByTagName(t)[0];s.parentNode.insertBefore(n,s);}(window,document,'script', '//qzonestyle.gtimg.cn/qzone/biz/gdt/dmp/user-action/gdtevent.min.js');gdt('init','1200178603');gdt('track','PAGE_VIEW');</script><noscript><img height="1" width="1" style="display:none" src="https://a.gdt.qq.com/pixel?user_action_set_id=1200178603&action_type=PAGE_VIEW&noscript=1"/></noscript>
+
+<header class="v4_header_pc">
+    <div sg-data-eventtype="FORM_SUBMIT_SUCCEESS" sg-data-convertid="2708317" class="sg-data"></div>
+    <div class="header_pc_left">
+        <a href="/" title="首页 | SUBMAIL" class="pc-logo-wrap ml-4 mr-5">
+            <img class="pc-logo" src="/libraries_v2/images/logoNew.svg"/>
+            <img class="pc-logo-white" src="/libraries_v2/images/logoNewb.svg"/>
+        </a>
+        <ul class="top-nav">
+            <li>
+              <a class="color-default" data-sub="product-sub-nav">产品服务</a>&nbsp;
+              <div class="triangle"></div>
+            </li>
+
+            <li>
+              <a class="color-default" data-sub="resolve-sub-nav">解决方案</a>&nbsp;
+              <div class="triangle"></div>
+            </li>
+
+            <li>
+                <a href="/global/suggestions" class="color-default">
+                    <span>资源中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="/documents" class="color-default">
+                    <span>开发文档</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="/security" class="color-default">
+                    <span>隐私安全</span>
+                </a>
+            </li> -->
+            <!-- <li>
+                <a href="/global/suggestions" class="color-default">
+                    <span>营销锦囊</span>
+                </a>
+            </li> -->
+            <li>
+              <a class="color-default" data-sub="cloud-sub-nav">云上赛邮</a>&nbsp;
+              <div class="triangle"></div>
+            </li>
+            <li>
+                <!-- <a class="color-default" href="/global/promotion">
+                    <img style="width: 120px" src="/libraries_v4/view/promotion/img/nie.gif" alt="">
+                </a> -->
+            </li>
+            
+        </ul>
+        <div class="product-con">
+            <!-- 产品服务 -->
+            <section id="product-sub-nav" class="pls-nav-dropdown" style="visibility: hidden; height: 0px">
+                <div class="d-flex nav-drown-con" style="height: 0px;transition: transform 0.2s ease-in-out 0s,opacity 0.2s ease-in-out 0s;opacity: 0;transform: translate(0px, -100%);">
+                    <div class="prdocu-sub-left">
+                        <div class="mr-auto">
+                            <img class="p-icon" src="/libraries_v4/layout/header/imgs/p_1.png" alt="">
+                            <div class="mt-4">
+                                <h6>全部产品</h6>
+                                <p class="color-gray fn14 mt-3 sub-left-desc">基于 PaaS 模式，为企业提供通信和营销能力的云端化、自动化、智能化，实现云通信和数智化的全面升级</p>
+                                    <a id="webchat" class="link block disa fn14 contact-business">前往联系商务 <span class="iconfont4 icon-xiangzuo gt"></span></a>
+                            </div>
+                            <div class="seek-phone">
+                                <p class="m-0 fn14">咨询电话: 4008-753-365</p>
+                                <p class="m-0 mt-1 mb-1 fn14">投诉电话: 18021097332</p>
+                                <p class="m-0 fn14">咨询时间与投诉时间为9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white prdocu-sub-right">
+                        <div>
+                            <h6 class="text-base-color">全部产品</h6>
+                            <div class="mt-4 d-flex flex-wrap">
+                                <a href="/sms" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>短信</h6>
+                                        <span class="color-gray fn14">短信通知/营销/验证码</span>
+                                    </div>
+                                    <img class="pro-item-img" src="/libraries_v4/layout/header/imgs/pi_1.png" alt="">
+                                </a>
+
+                                <a href="/voice" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>语音</h6>
+                                        <span class="color-gray fn14">语音通知/在线群呼</span>
+                                    </div>
+                                    <img class="pro-item-img pro-vocie-img" style="top: 27%;left: 40%;" src="/libraries_v4/layout/header/imgs/pi_2.png" alt="">
+                                </a>
+                                <a href="/mail" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>邮件</h6>
+                                        <span class="color-gray fn14">在线邮件发送平台</span>
+                                    </div>
+                                    <img class="pro-item-img pro-mail-img" style="top: -3%;left: 70%;" src="/libraries_v4/layout/header/imgs/pi_3.png" alt="">
+                                </a>
+                                <a href="/shorturl" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>短网址</h6>
+                                        <span class="color-gray fn14">快速整合/自定义域名</span>
+                                    </div>
+                                    <img class="pro-item-img pro-short-img" style="top: 22%;left: 61%;" src="/libraries_v4/layout/header/imgs/pi_4.png" alt="">
+                                </a>
+
+                                <a href="/internationalsms" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>国际短信</h6>
+                                        <span class="color-gray fn14">全球覆盖/多国语言</span>
+                                    </div>
+                                    <img class="pro-item-img pro-inter-img" style="top: 23%;left: 58%;" src="/libraries_v4/layout/header/imgs/pi_5.png" alt="">
+                                </a>
+                                <a href="/smartsms" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>智慧短信</h6>
+                                        <span class="color-gray fn14">短信品宣/短信公众号</span>
+                                    </div>
+                                    <img class="pro-item-img pro-smart-img" style="top: 7%;left: 63%;" src="/libraries_v4/layout/header/imgs/pi_6.png" alt="">
+                                </a>
+
+                                <a href="/onepass" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>免密登录</h6>
+                                        <span class="color-gray fn14">一键登录/本机号码认证</span>
+                                    </div>
+                                    <img class="pro-item-img pro-onepass-img" style="top: 28%;left: 55%;" src="/libraries_v4/layout/header/imgs/pi_7.png" alt="">
+                                </a>
+                                <a href="/factor" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>身份验证</h6>
+                                        <span class="color-gray fn14">认证二要素/三要素</span>
+                                    </div>
+                                    <img class="pro-item-img pro-factor-img" style="top: 14%;left: 45%;" src="/libraries_v4/layout/header/imgs/pi_8.png" alt="">
+                                </a>
+                                <a href="/rcs" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>5G 阅信</h6>
+                                        <span class="color-gray fn14">智能交互/富媒体卡片</span>
+                                    </div>
+                                    <img class="pro-item-img pro-rcs-img" style="top: 25%;left: 39%;" src="/libraries_v4/layout/header/imgs/pi_9.png" alt="">
+                                </a>
+                                <a href="/mms" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>多媒体彩信</h6>
+                                        <span class="color-gray fn14">图文彩信/视频彩信</span>
+                                    </div>
+                                    <img class="pro-item-img pro-mms-img" style="top: 17%;left: 55%;" src="/libraries_v4/layout/header/imgs/pi_10.png" alt="">
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 解决方案 -->
+            <section id="resolve-sub-nav" class="pls-nav-dropdown solution-part" style="visibility: hidden; height: 0px">
+                <div class="d-flex nav-drown-con" style="height: 0px;transition: transform 0.2s ease-in-out 0s,opacity 0.2s ease-in-out 0s;opacity: 0;transform: translate(0px, -100%);">
+                    <div class="prdocu-sub-left">
+                        <div class="mr-auto">
+                            <img class="p-icon" src="/libraries_v4/layout/header/imgs/p_2.png" alt="">
+                            <div class="mt-4">
+                                <h6>解决方案</h6>
+                                <p class="color-gray fn14 mt-3 sub-left-desc">利用高可靠性、高可用性、低成本的云计算技术，结合 SUBMAIL 赛邮的技术创新能力，为不同领域的用户提供多场景的解决方案，满足不同客户之间的个性化服务。</p>
+                                    <a id="webchat" class="link disa block fn14 contact-business" style="margin-top: 2rem;">前往联系商务 <span class="iconfont4 icon-xiangzuo gt"></span></a>
+                            </div>
+                            <div class="seek-phone" style=" margin-top: 6rem;">
+                                <p class="m-0 fn14">咨询电话: 4008-753-365</p>
+                                <p class="m-0 mt-1 mb-1 fn14">投诉电话: 18021097332</p>
+                                <p class="m-0 fn14">咨询时间与投诉时间为9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white prdocu-sub-right">
+                        <div>
+                            <h6 class="text-base-color">行业解决方案</h6>
+                            <div class="mt-4 d-flex flex-wrap">
+                                <a href="/solution" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>电商行业</h6>
+                                        <span class="color-gray fn14">从容面对电商业务高峰</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/d_1.png" alt="">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/d_2.png" alt="">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/d_3.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/education" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>教育行业</h6>
+                                        <span class="color-gray fn14">打造综合性通信管理体系</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/j_1.png" alt="">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/j_2.png" alt="">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/j_3.png" alt="">
+                                    </div>
+                                </a>
+                                <!-- <a href="/manufacturing" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>制造行业</h6>
+                                        <span class="color-gray fn14">助力实现全域数字化转型</span>
+                                    </div>
+                                </a> -->
+                                <a href="/solugame" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>游戏行业</h6>
+                                        <span class="color-gray fn14">助力游戏内外部运营开发</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/g_1.png" alt="">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/g_2.png" alt="">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/g_3.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/gover" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>政府及公共事业</h6>
+                                        <span class="color-gray fn14">打造高效的政务云通信平台</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/z_1.png" alt="">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/z_2.png" alt="">
+                                        <img class="sol-img" src="/libraries_v4/layout/header/imgs/z_3.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 ">
+                            <h6 class="text-base-color">通用解决方案</h6>
+                            <div class="ty-sol mt-4">
+                                <div class="fn14">数字化营销</div>
+                                <div class="fn14">AI 语音机器人</div>
+                                <div class="fn14"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 云上赛邮 -->
+            <section id="cloud-sub-nav" class="pls-nav-dropdown solution-part" style="visibility: hidden; height: 0px">
+                <div class="d-flex nav-drown-con" style="height: 0px;transition: transform 0.2s ease-in-out 0s,opacity 0.2s ease-in-out 0s;opacity: 0;transform: translate(0px, -100%);">
+                    <div class="prdocu-sub-left">
+                        <div class="mr-auto">
+                            <img class="p-icon" src="/libraries_v4/layout/header/imgs/p_2.png" alt="">
+                            <div class="mt-4">
+                                <h6>云上赛邮</h6>
+                                <p class="color-gray fn14 mt-3 sub-left-desc">SUBMAIL 赛邮始终致力于为企业用户提供全功能的云端通信服务、互联网营销能力、企业 PaaS 服务。现已累计服务全球超过 10 万用户，业务覆盖全球 230+ 个国家和地区。</p>
+                                    <a id="webchat" class="link block fn14 contact-business disa" style="margin-top: 2rem;">前往联系商务 <span class="iconfont4 icon-xiangzuo gt"></span></a>
+                            </div>
+                            <div class="seek-phone" style=" margin-top: 6rem;">
+                                <p class="m-0 fn14">咨询电话: 4008-753-365</p>
+                                <p class="m-0 mt-1 mb-1 fn14">投诉电话: 18021097332</p>
+                                <p class="m-0 fn14">咨询时间与投诉时间为9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white prdocu-sub-right">
+                        <div>
+                            <h6 class="text-base-color">关于我们</h6>
+                            <div class="mt-4 d-flex flex-wrap">
+                                <a href="/brand" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>关于赛邮</h6>
+                                        <span class="color-gray fn14">一站式云通信平台</span>
+                                    </div>
+                                </a>
+                                <!-- <a href="#" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>联系我们</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>招贤纳才</h6>
+                                        <span class="color-gray fn14">从容面对电商业务高峰</span>
+                                    </div>
+                                </a> -->
+                            </div>
+                        </div>
+
+                        <div class="mt-3 ">
+                            <h6 class="text-base-color">云上赛邮</h6>
+                            <div class="mt-4 d-flex flex-wrap">
+                                <a href="/cloud_ecology" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>云联生态</h6>
+                                        <span class="color-gray fn14">互惠共赢生态体系</span>
+                                    </div>
+                                </a>
+                                <a href="/security" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>云信防护</h6>
+                                        <span class="color-gray fn14">牢牢把关 坚守隐私</span>
+                                    </div>
+                                </a>
+                                <!-- <a href="/cloud_future" class="pro-item color-default">
+                                    <div class="letter-wrap">
+                                        <h6>云启未来</h6>
+                                        <span class="color-gray fn14">共启数智新时代</span>
+                                    </div>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <div class="sub-nav-wrap">
+            <!-- 产品服务 -->
+            <div class="sub-nav-content product-sub-nav">
+                <div class="container">
+                    <div class="sub-nav pt-3 row no-gutters">
+                        <a href="/sms" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_1.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>短信</h6>
+                                <span class="color-gray fn14">短信通知/营销/验证码</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/mail" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_2.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>邮件</h6>
+                                <span class="color-gray fn14">在线邮件发送平台</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/mms" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_3.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>多媒体彩信</h6>
+                                <span class="color-gray fn14">图文彩信/视频彩信</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/voice" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_4.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>语音</h6>
+                                <span class="color-gray fn14">语音通知/在线群呼</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/shorturl" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_5.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>短网址</h6>
+                                <span class="color-gray fn14">快速整合/自定义域名</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/internationalsms" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_6.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>国际短信</h6>
+                                <span class="color-gray fn14">全球覆盖/多国语言</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/smartsms" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_7.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>智慧短信</h6>
+                                <span class="color-gray fn14">短信品宣/短信公众号</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/onepass" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_8.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>免密登录</h6>
+                                <span class="color-gray fn14">一键登录/本机号码认证</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/factor" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_9.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>身份验证</h6>
+                                <span class="color-gray fn14">认证二要素/三要素</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/rcs" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_10.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>5G 阅信</h6>
+                                <span class="color-gray fn14">智能交互/富媒体卡片</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 解决方案 -->
+            <div class="sub-nav-content resolve-sub-nav">
+                <div class="container">
+                    <div class="sub-nav pt-3 row no-gutters">
+                        <a href="/solution" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/1_1.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>电商行业解决方案</h6>
+                                <span class="color-gray fn14">从容面对业务高峰</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/education" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/1_2.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>教育行业解决方案</h6>
+                                <span class="color-gray fn14">综合教育管理平台</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/solugame" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/1_3.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>游戏行业解决方案</h6>
+                                <span class="color-gray fn14">激活提升玩家活跃度</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                        <a href="/gover" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/1_4.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>政府及公共行业解决方案</h6>
+                                <span class="color-gray fn14">高强度/多层级数据防护</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 云上赛邮 -->
+            <div class="sub-nav-content cloud-sub-nav">
+                <div class="container">
+                    <div class="sub-nav pt-3 row no-gutters">
+                        <a href="/" class="col-3 sub-nav-item p-3 color-default">
+                            <img class="sub-nav-item-img" src="/libraries_v4/layout/header/imgs/0_1.svg" alt="">
+                            <div class="letter-wrap ml-3">
+                                <h6>云上赛邮</h6>
+                                <span class="color-gray fn14">短信通知/营销/验证码</span>
+                            </div>
+                            <span class="iconfont4 icon-xiangzuo sub-jiantou"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_pc_right">
+        <a class="pc_login mr-5 pr-4 color-default" href="/login">登录</a> <a class="pc_register my-button" type="primary" href="/registered">注册送短信</a>    </div>
+</header>
+
+<header class="v4_header_mob">
+    <div sg-data-eventtype="FORM_SUBMIT_SUCCEESS" sg-data-convertid="2708317" class="sg-data"></div>
+    <div class="container">
+        <div class="row no-gutters justify-content-between align-items-center">
+            <a href="/" title="首页 | SUBMAIL" class="mob-logo-wrap">
+                <img class="mob-logo" src="/libraries_v2/images/logoNew.svg"/>
+                <img class="mob-logo-white" src="/libraries_v2/images/logoNewb.svg"/>
+            </a>
+            <div class="right-menu" data-toggle="collapse" data-target="#mob-header-collapse" aria-expanded="false" aria-controls="mob-header-collapse">
+                <nav-products>
+                    <nav-button class="submail-mdi-nav-btn" style="width:60px">
+                        <label id="mdi-submail-nav-btn">
+                            <span class="mdi-nav-products-1">
+                                <span class="nav-products-icon"></span>
+                            </span>
+                            <span class="mdi-nav-products-2">
+                                <span class="nav-products-icon"></span>
+                            </span>
+                            <span class="mdi-nav-products-3">
+                                <span class="nav-products-icon"></span>
+                            </span>
+                        </label>
+                    </nav-button>
+                </nav-products>
+            </div>
+        </div>
+    </div>
+    <div class="mob-nav-content">
+        <div class="sidebar-fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 bg-white sidebar-fix-left" style="border-right:1px solid #e1e6ed">
+                        <div class="mob-nav-item active" data='0'><div class="nav-header"><a href="#" class="nav-header-letter px-3"><span>产品服务</span></a></div></div>
+                        <div class="mob-nav-item" data='1'><div class="nav-header"><a href="#" class="nav-header-letter px-3"><span>解决方案</span></a></div></div>
+                        <div class="mob-nav-item"><div class="nav-header"><a href="/global/suggestions" class="nav-header-letter px-3"><span style="border-bottom: 1px solid #b2bbd0">资源中心</span></a></div></div>
+                        <div class="mob-nav-item"><div class="nav-header"><a href="/documents" class="nav-header-letter px-3"><span style="border-bottom: 1px solid #b2bbd0">开发文档</span></a></div></div>
+                        <div class="mob-nav-item" data='2'><div class="nav-header"><a href="#" class="nav-header-letter px-3"><span>云上赛邮</span></a></div></div>
+                        <div class="mob-nav-item" data='2'><div class="nav-header"><a class="txt-color" href="/global/promotion"><img style="width: 120px" src="/libraries_v4/view/promotion/img/nie.gif" alt=""></a></div></div>
+                    </div>
+                    <div class="col-8 bg-white sidebar-fix-rigth">
+                        <div class="sub-nav">
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/sms" >短信</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/voice" >语音</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/mail" >邮件</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/shorturl" >短网址</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/internationalsms">国际短信</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/smartsms" >智慧短信</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/onepass" >免密登录</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/factor" >身份验证</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/rcs" >5G 阅信</a></div>
+                            <div class="sub-nav-item py-2 pb-3 px-4"><a href="/mms" >多媒体彩信</a></div>
+                        </div>
+                        <div class="sub-nav">
+                            <div class="sub-nav-item py-3 px-4"><a href="/solution" >电商行业解决方案</a></div>
+                            <div class="sub-nav-item py-3 px-4"><a href="/education" >教育行业解决方案</a></div>
+                            <div class="sub-nav-item py-3 px-4"><a href="/solugame" ">游戏行业解决方案</a></div>
+                            <div class="sub-nav-item py-3 px-4"><a href="/gover">政府及公共行业解决方案</a></div>
+                        </div> 
+                        <div class="sub-nav">
+                            <div class="sub-nav-item py-3 px-4"><a href="/brand" >关于赛邮</a></div>
+                            <div class="sub-nav-item py-3 px-4"><a href="/cloud_ecology">云联生态</a></div>
+                            <div class="sub-nav-item py-3 px-4"><a href="/security">云端防护</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-4">
+                                <a class="mob_register my-button mr-2" type="primary" href="/registered"><span class="iconfont4 icon-liwu fn18 ml-2 mr-2"></span>注册送短信</a>
+                                <a class="mob_login ml-2" href="/login">登录</a> 
+                            </div>            
+            </div>
+        </div>
+       
+        <!-- <div class="collapse" id="mob-header-collapse">
+            <div class="container">
+                <div class="accordion" id="nav-content">
+                    <div class="mob-nav-item">
+                        <div class="nav-header" id="header-0">
+                            <div class="nav-header-letter px-3" data-toggle="collapse" data-target="#coll-0" aria-expanded="false" aria-controls="coll-0">
+                                <span>产品服务</span>
+                                <span class="iconfont4 icon-xiangzuo nav-header-jiantou ml-1"></span>
+                            </div>
+                        </div>
+
+                        <div id="coll-0" class="collapse" aria-labelledby="header-0" data-parent="#nav-content">
+                            <div class="sub-nav">
+                                <div class="sub-nav-item py-2 px-4"><a href="/sms" class="px-1">短信</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/voice" class="px-1">语音</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/mail" class="px-1">邮件</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/shorturl" class="px-1">短网址</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/internationalsms" class="px-1">国际短信</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/smartsms" class="px-1">智慧短信</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/onepass" class="px-1">免密登录</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/factor" class="px-1">身份验证</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/rcs" class="px-1">5G 阅信</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/mms" class="px-1">多媒体彩信</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="nav-header" id="header-1">
+                            <div class="nav-header-letter px-3" data-toggle="collapse" data-target="#coll-1" aria-expanded="false" aria-controls="coll-1">
+                                <span>解决方案</span>
+                                <span class="iconfont4 icon-xiangzuo nav-header-jiantou ml-1"></span>
+                            </div>
+                        </div>
+
+                        <div id="coll-1" class="collapse" aria-labelledby="header-1" data-parent="#nav-content">
+                            <div class="sub-nav">
+                                <div class="sub-nav-item py-2 px-4"><a href="/solution" class="px-1">电商行业解决方案</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/education" class="px-1">教育行业解决方案</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/solugame" class="px-1">游戏行业解决方案</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/gover" class="px-1">政府及公共行业解决方案</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="nav-header">
+                            <a href="/global/suggestions" class="nav-header-letter px-3">
+                                <span>资源中心</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="nav-header">
+                            <a href="/documents" class="nav-header-letter px-3">
+                                <span>开发文档</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="nav-header" id="header-2">
+                            <div class="nav-header-letter px-3" data-toggle="collapse" data-target="#coll-2" aria-expanded="false" aria-controls="coll-2">
+                                <span>云上赛邮</span>
+                                <span class="iconfont4 icon-xiangzuo nav-header-jiantou ml-1"></span>
+                            </div>
+                        </div>
+
+                        <div id="coll-2" class="collapse" aria-labelledby="header-2" data-parent="#nav-content">
+                            <div class="sub-nav">
+                                <div class="sub-nav-item py-2 px-4"><a href="/brand" class="px-1">关于赛邮</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/cloud_ecology" class="px-1">云联生态</a></div>
+                                <div class="sub-nav-item py-2 px-4"><a href="/security" class="px-1">云端防护</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="mob_login" href="/login">登录</a> <a class="mob_register my-button mt-2 mb-4" type="primary" href="/registered">注册送短信</a>            </div>
+        </div> -->
+
+    </div>
+</header>
+
+
+
+<style>
+.content {
+    width: 100%;
+    padding-right:0!important;
+    padding-left:0!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+</style>
+        <main class="login-content">
+            <div id="login" class="login-form">
+            <grid>
+                <cell>
+                <div><img src="http://suburl.cn/libraries/images/404.svg" /></div>
+                <h5 class="mt-3">Ops! 您查找的页面消失了。</h5>
+                <p>
+                    新版本更换了页面网址，请返回官网重新点击浏览，如果您收藏了本页，请及时更换其他页面进行收藏
+                </p>
+                <a href="/" class="btn btn-primary btn-right-chevron-right mt-4"
+                    >返回 SUBMAIL 官网</a
+                >
+                </cell>
+            </grid>
+            </div>
+        </main>
+                <footer class="content-f" style="font-size:12px;color:#606879;"> 
+            <grid>
+                <cell class="cell-12 cell-s-12 cell-l-12 text-center" style="color:#606879">
+                    SUBMAIL 赛邮·云通信 © 2025 ALL RIGHTS RESERVED. 保留所有权利 | 
+                    <a href="https://www.mysubmail.com/security" style="color: #606879;">隐私与安全</a> | 
+                    <a style="color: #606879;" href="/documents/F70oc3">开发者公约</a> | 
+                    <a style="color: #606879;" href="/documents/ibW2A2">使用协议</a>
+                </cell>
+                <!-- <cell class="cell-12 cell-s-12 cell-l-3 text-center text-l-right">
+                    <a href="https://beian.miit.gov.cn" target="_blank">沪ICP备16035411号-1</a>
+                </cell> -->
+            </grid>
+        </footer>
+        <script>
+            !function(e,a,t,c,n,r,s){e.GoogleAnalyticsObject=n,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,r=a.createElement(t),s=a.getElementsByTagName(t)[0],r.async=1,r.src="//www.google-analytics.com/analytics.js",s.parentNode.insertBefore(r,s)}(window,document,"script",0,"ga"),ga("create","UA-16294152-5","auto"),ga("require","displayfeatures"),ga("send","pageview");var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?1226d0e0b52736ddc8b33acf9c34d14b";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}();        </script>    </body>
+
+    <style>
+        .login-content{
+            top: 34rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content-f{
+            position: absolute;
+            top:70rem
+            }
+    </style>
+</html>
