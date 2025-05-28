@@ -1,0 +1,203 @@
+layui.config({
+    version: true
+    , debug: false
+});
+layui.use(['laydate', 'element', 'table', 'layer'], function () {
+    $ = layui.jquery;//jquery
+    var element = layui.element;//面包导
+    var layer = layui.layer;//弹出层 
+
+    //定义事件
+    var active = {
+        //刷新当前列表
+        reload: function () {
+            Highcharts.setOptions({
+                lang: {
+                    loading: ['请耐心等待，正在加载中...']
+                },
+                colors: ['#FF8F5B', '#DDDF00', '#3FCAF5', '#8085E9', '#d4237a', '#1E9FFF', '#13227a', '#41CACB', '#1ea33e']
+            });
+            var promise = function () {
+                return new Promise(function (resolve, reject) {
+                    $.ajax({
+                        type: "post",
+                        url: "/Product/ProductCharge",
+                        dataType: "json"
+                    }).done(function (data) {
+                        resolve(data);
+                    });
+                });
+            }
+            var ch = { "categories": ["充值统计", "通知", "营销", "变量", "验证码", "图文", "视频", "闪信", "语音", "国际"], "series": [{ "name": "通知", "data": [0] }, { "name": "营销", "data": [0] }, { "name": "变量", "data": [0] }, { "name": "验证码", "data": [0] }, { "name": "图文", "data": [0] }, { "name": "视频", "data": [0] }, { "name": "闪信", "data": [0] }, { "name": "语音", "data": [0] }, { "name": "国际", "data": [0] }] };
+            var chart1 = Highcharts.chart('container01', {
+                chart: {
+                    type: 'column'
+                },
+                credits: { enabled: false },
+                title: {
+                    text: '',
+                    style: {
+                        fontSize: '16px'
+                    }
+                },
+                xAxis: {
+                    categories: ch.categories,
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: '充值(元)'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span>{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y} 元</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true,
+                    positioner: function () {
+                        return { x: 180, y: 90 };
+                    }
+                },
+                loading: {
+                    hideDuration: 1000,
+                    showDuration: 1000,
+                    labelStyle: {
+                        fontStyle: 'italic',
+                        fontSize: '20px'
+                    },
+                    style: {
+                        backgroundColor: 'gray'
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        borderWidth: 0
+                    }
+                },
+                series: ch.series,
+                exporting: {
+                    enabled: true,
+                    buttons: {
+                        contextButton: {
+                            menuItems: ['downloadPNG']
+                        },
+                        textButton: {
+                            text: '订单详情',
+                            symbolStrokeWidth: 1,
+                            y: 0,
+                            onclick: function () {
+                                var element = parent.layui.element;
+                                var url = "/AccountChanges/ChargeList";
+                                var id = "995";
+                                var title = "订单详情";
+                                parent.openTab(url, id, element, title);
+                            }
+                        },
+                        filename: '账户总余额'
+                    }
+                }
+            });
+            chart1.showLoading();//开启加载中动画效果
+
+            promise().then(function (json) {
+                if (json.code != "1") {
+                    //发送量
+                    Highcharts.chart('container01', {
+                        chart: {
+                            type: 'column'
+                        },
+                        credits: { enabled: false },
+                        title: {
+                            text: '',
+                            style: {
+                                fontSize: '16px'
+                            }
+                        },
+                        xAxis: {
+                            categories: json.categories,
+                            crosshair: true
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: '充值(' + json.unit + ')'
+                            },
+                            labels: {
+                                formatter: function () {
+                                    return this.value;
+                                }
+                            }
+                        },
+                        tooltip: {
+                            headerFormat: '<span>{point.key}</span><table>',
+                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}： </td>' +
+                            '<td style="padding:0"><b>{point.y} ' + json.unit + '</b></td></tr>',
+                            footerFormat: '</table>',
+                            shared: true,
+                            useHTML: true,
+                            positioner: function () {
+                                return { x: 180, y: 90 };
+                            }
+                        },
+                        loading: {
+                            hideDuration: 1000,
+                            showDuration: 1000,
+                            labelStyle: {
+                                fontStyle: 'italic',
+                                fontSize: '20px'
+                            },
+                            style: {
+                                backgroundColor: 'gray'
+                            }
+                        },
+                        plotOptions: {
+                            column: {
+                                borderWidth: 0
+                            }
+                        },
+                        series: json.series,
+                        exporting: {
+                            enabled: true,
+                            buttons: {
+                                contextButton: {
+                                    menuItems: ['downloadPNG']
+                                },
+                                textButton: {
+                                    text: '订单详情',
+                                    symbolStrokeWidth: 1,
+                                    y: 0,
+                                    onclick: function () {
+                                        var element = parent.layui.element;
+                                        var url = "/AccountChanges/ChargeList";
+                                        var id = "995";
+                                        var title = "订单详情";
+                                        parent.openTab(url, id, element, title);
+                                    }
+                                }
+                            },
+                            filename: '账户总余额'
+                        }
+                    });
+
+                    chart1.hideLoading();
+                }
+            });
+
+        }
+    }
+    active["reload"].call(this);
+});
+
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}

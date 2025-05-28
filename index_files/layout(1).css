@@ -1,0 +1,758 @@
+@charset "utf-8";
+/* CSS Document */
+.index_boxs {
+    width: 95%;
+    height: auto;
+    padding-left: 3%;
+    margin-top: 20px;
+}
+
+    .index_boxs .peosonal_infor {
+        width: 100%;
+        height: 225px;
+        overflow: hidden;
+    }
+
+        .index_boxs .peosonal_infor .peoson_left {
+            width: 72%;
+            height: 225px;
+            background: #ffffff;
+            float: left;
+        }
+
+            .index_boxs .peosonal_infor .peoson_left .peod_top {
+                width: 96%;
+                padding: 0 2%;
+                height: 56px;
+                overflow: hidden;
+                padding-top: 50px;
+            }
+
+                .index_boxs .peosonal_infor .peoson_left .peod_top .top_zuoce {
+                    width: 36%;
+                    height: 56px;
+                    float: left;
+                }
+
+                    .index_boxs .peosonal_infor .peoson_left .peod_top .top_zuoce .touxing {
+                        width: 20%;
+                        height: 56px;
+                        float: left;
+                    }
+
+                        .index_boxs .peosonal_infor .peoson_left .peod_top .top_zuoce .touxing img {
+                            width: 56px;
+                            height: 56px;
+                            cursor: pointer;
+                        }
+
+                    .index_boxs .peosonal_infor .peoson_left .peod_top .top_zuoce .name_box {
+                        width: 70%;
+                        height: 56px;
+                        float: left;
+                        margin-left: 14px;
+                    }
+
+                        .index_boxs .peosonal_infor .peoson_left .peod_top .top_zuoce .name_box h1 {
+                            width: 100%;
+                            height: 38px;
+                            font-size: 22px;
+                            color: #333333;
+                            line-height: 30px;
+                        }
+
+                        .index_boxs .peosonal_infor .peoson_left .peod_top .top_zuoce .name_box p {
+                            width: 100%;
+                            height: 16px;
+                            overflow: hidden;
+                        }
+
+                            .index_boxs .peosonal_infor .peoson_left .peod_top .top_zuoce .name_box p img {
+                                width: 15px;
+                                height: 15px;
+                                float: left;
+                                margin-right: 10px;
+                            }
+
+                            .index_boxs .peosonal_infor .peoson_left .peod_top .top_zuoce .name_box p span {
+                                height: 15px;
+                                line-height: 15px;
+                                font-size: 13px;
+                                color: #B6B6B6;
+                            }
+
+                .index_boxs .peosonal_infor .peoson_left .peod_top .top_youce {
+                    width: 64%;
+                    height: 35px;
+                    float: left;
+                    overflow: hidden;
+                    padding-top: 10px;
+                }
+
+                    .index_boxs .peosonal_infor .peoson_left .peod_top .top_youce .topups {
+                        width: 135px;
+                        height: 35px;
+                        background: #3FCAF5;
+                        border-radius: 100px;
+                        line-height: 35px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #ffffff;
+                        display: block;
+                        float: left;
+                        margin-left: 20px;
+                        position: relative;
+                    }
+
+                        .index_boxs .peosonal_infor .peoson_left .peod_top .top_youce .topups i {
+                            width: 20px;
+                            height: 35px;
+                            line-height: 37px;
+                            display: inline-block;
+                            color: #ffffff;
+                            font-size: 16px;
+                            position: absolute;
+                            left: 16px;
+                            top: 0;
+                        }
+
+                    .index_boxs .peosonal_infor .peoson_left .peod_top .top_youce .qudhuan {
+                        width: 135px;
+                        height: 33px;
+                        border: solid 1px #EAEAEA;
+                        border-radius: 100px;
+                        line-height: 33px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #ffffff;
+                        display: block;
+                        float: left;
+                        background: #FF5722;
+                        margin-left: 20px;
+                        position: relative;
+                    }
+
+                        .index_boxs .peosonal_infor .peoson_left .peod_top .top_youce .qudhuan i {
+                            width: 20px;
+                            height: 35px;
+                            line-height: 37px;
+                            display: inline-block;
+                            color: #ffffff;
+                            font-size: 18px;
+                            position: absolute;
+                            left: 17px;
+                            top: 0;
+                        }
+
+            .index_boxs .peosonal_infor .peoson_left .peo_deatils {
+                width: 95%;
+                padding: 0 0 0 2%;
+                height: 60px;
+                overflow: hidden;
+                margin-top: 20px;
+            }
+
+                .index_boxs .peosonal_infor .peoson_left .peo_deatils li {
+                    width: 20%;
+                    height: 60px;
+                    float: left;
+                    line-height: 60px;
+                }
+
+                    .index_boxs .peosonal_infor .peoson_left .peo_deatils li i {
+                        width: 40px;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 32px;
+                        color: #F29904;
+                        float: left;
+                        display: inline-block;
+                        text-align: center;
+                    }
+
+                    .index_boxs .peosonal_infor .peoson_left .peo_deatils li h1 {
+                        width: 70px;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 14px;
+                        color: #333333;
+                        float: left;
+                    }
+
+                    .index_boxs .peosonal_infor .peoson_left .peo_deatils li p {
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 14px;
+                        color: #FFA31F;
+                    }
+
+        .index_boxs .peosonal_infor .peoson_right {
+            width: 25.3%;
+            height: 225px;
+            background: #ffffff;
+            margin-left: 15px;
+            float: left;
+        }
+
+            .index_boxs .peosonal_infor .peoson_right .fauc_box {
+                width: 80%;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #e4393c;
+                padding: 20px 0 0 15%;
+            }
+
+            .index_boxs .peosonal_infor .peoson_right .pulic_number {
+                width: 80%;
+                height: 92px;
+                overflow: hidden;
+                padding-left: 15%;
+                margin-top: 16px;
+            }
+
+                .index_boxs .peosonal_infor .peoson_right .pulic_number .nubmei_left {
+                    width: 92px;
+                    height: 92px;
+                    float: left;
+                }
+
+                    .index_boxs .peosonal_infor .peoson_right .pulic_number .nubmei_left img {
+                        width: 92px;
+                        height: 92px;
+                    }
+
+                .index_boxs .peosonal_infor .peoson_right .pulic_number .nubmei_right {
+                    width: 100px;
+                    height: 92px;
+                    float: left;
+                    margin-left: 10px;
+                }
+
+                    .index_boxs .peosonal_infor .peoson_right .pulic_number .nubmei_right a {
+                        display: block;
+                        width: 100px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 13px;
+                        color: #333333;
+                    }
+
+    .index_boxs .account_bill {
+        width: 100%;
+        height: 310px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+        .index_boxs .account_bill .bill_left {
+            width: 72%;
+            height: 310px;
+            float: left;
+        }
+
+            .index_boxs .account_bill .bill_left img {
+                width: 100%;
+                height: 310px;
+            }
+
+        .index_boxs .account_bill .bill_right {
+            width: 25.3%;
+            height: 310px;
+            background: #ffffff;
+            margin-left: 15px;
+            float: left;
+        }
+
+            .index_boxs .account_bill .bill_right .news_bulletin {
+                width: 86%;
+                height: 15px;
+                overflow: hidden;
+                padding: 25px 0 10px 7%;
+            }
+
+                .index_boxs .account_bill .bill_right .news_bulletin span {
+                    width: 5px;
+                    height: 15px;
+                    display: inline-block;
+                    background: #FF5722;
+                    float: left;
+                }
+
+                .index_boxs .account_bill .bill_right .news_bulletin p {
+                    width: 100px;
+                    height: 15px;
+                    line-height: 15px;
+                    font-size: 14px;
+                    color: #333333;
+                    float: left;
+                    padding-left: 10px;
+                }
+
+                .index_boxs .account_bill .bill_right .news_bulletin a {
+                    display: block;
+                    height: 15px;
+                    line-height: 15px;
+                    font-size: 12px;
+                    color: #20B5F4;
+                    float: right;
+                }
+
+            .index_boxs .account_bill .bill_right .bulletin_list {
+                width: 86%;
+                /*height: 235px;*/
+                padding: 0 7%;
+                overflow: hidden;
+            }
+
+                .index_boxs .account_bill .bill_right .bulletin_list li {
+                    width: 100%;
+                    height: 30px;
+                    border-bottom: dashed 1px #EBEBEB;
+                }
+
+                    .index_boxs .account_bill .bill_right .bulletin_list li a {
+                        display: block;
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 13px;
+                        color: #333333;
+                        overflow: hidden;
+                    }
+
+                        .index_boxs .account_bill .bill_right .bulletin_list li a span {
+                            float: left;
+                            width: 85px;
+                            margin-right: 10px;
+                        }
+
+                        .index_boxs .account_bill .bill_right .bulletin_list li a p {
+                            width: 70%;
+                            height: 30px;
+                            line-height: 30px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            float: left;
+                        }
+
+    .index_boxs .my_product {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+        .index_boxs .my_product li {
+            width: 32%;
+            height: 200px;
+            border: solid 1px #eee;
+            float: left;
+            margin-right: 1%;
+            background: #ffffff;
+            border-radius: 6px;
+            box-shadow: 2px 4px 9px 0px rgba(53, 109, 209, 0.06);
+            margin-top: 20px;
+        }
+
+            .index_boxs .my_product li .product_head {
+                width: 92%;
+                height: 53px;
+                background: #EDF0F8;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                line-height: 53px;
+                font-size: 16px;
+                color: #333333;
+                padding-left: 8%;
+            }
+
+                .index_boxs .my_product li .product_head span {
+                    font-size: 13px;
+                    /*color: #A4B3DB;*/
+                    color: #FF5722;
+                    margin-left: 20px;
+                }
+
+            .index_boxs .my_product li .proct_box {
+                width: 100%;
+                height: 50px;
+                overflow: hidden;
+                padding: 20px 0;
+            }
+
+                .index_boxs .my_product li .proct_box .messagetu {
+                    width: 50px;
+                    height: 50px;
+                    float: left;
+                    margin: 0 10px 0 20px;
+                }
+
+                    .index_boxs .my_product li .proct_box .messagetu img {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                .index_boxs .my_product li .proct_box .youeni {
+                    width: 75%;
+                    height: 70px;
+                    line-height: 25px;
+                    font-size: 13px;
+                    float: left;
+                    overflow: hidden;
+                }
+
+            .index_boxs .my_product li .goapplication {
+                width: 83px;
+                height: 34px;
+                float: right;
+                margin-right: 30px;
+                margin-top: 10px;
+            }
+
+                .index_boxs .my_product li .goapplication a {
+                    display: block;
+                    width: 83px;
+                    height: 34px;
+                    background: #FF8F5B;
+                    line-height: 34px;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+
+    .index_boxs .text_message {
+        width: 100%;
+        height: 110px;
+    }
+
+        .index_boxs .text_message .basic_zilio {
+            width: 100%;
+            height: 20px;
+            line-height: 60px;
+            font-size: 13px;
+            color: #666666;
+        }
+
+        .index_boxs .text_message .basic_content {
+            width: 100%;
+            height: 110px;
+            overflow: hidden;
+        }
+
+            .index_boxs .text_message .basic_content .inteobox {
+                width: 23%;
+                height: 110px;
+                background: #ffffff;
+                float: left;
+                margin-right: 1.3%;
+            }
+
+                .index_boxs .text_message .basic_content .inteobox .datetu {
+                    width: 60px;
+                    height: 60px;
+                    float: left;
+                    margin: 7px 25px 25px 17px;
+                }
+
+                    .index_boxs .text_message .basic_content .inteobox .datetu img {
+                        width: 60px;
+                        height: 60px;
+                        cursor: pointer;
+                    }
+
+            .index_boxs .text_message .basic_content .date_one .dateyouce {
+                width: 50%;
+                height: 60px;
+                float: left;
+                margin-top: 31px; 
+            }
+
+                .index_boxs .text_message .basic_content .date_one .dateyouce p {
+                    width: 100%;
+                    height: 20px;
+                    font-size: 14px;
+                    color: #666666;
+                }
+
+                .index_boxs .text_message .basic_content .date_one .dateyouce h1 {
+                    width: 100%;
+                    height: 28px;
+                    line-height: 28px;
+                    font-size: 18px;
+                    color: #6C6DBF;
+                }
+
+            .index_boxs .text_message .basic_content .date_one {
+                width: 18.15%;
+                height: 110px;
+                background: #ffffff;
+                float: left;
+                margin-right: 1.3%;
+                position: relative;
+            }
+
+                .index_boxs .text_message .basic_content .date_one .yingxiao {
+                    width: 48px;
+                    height: 48px;
+                    margin: 31px 10px 0 10px;
+                    float: left;
+                }
+
+                    .index_boxs .text_message .basic_content .date_one .yingxiao img {
+                        width: 48px;
+                        height: 48px;
+                    }
+
+                .index_boxs .text_message .basic_content .date_one .marketing {
+                    width: 50%;
+                    height: 48px;
+                    float: left;
+                    padding-top: 31px;
+                }
+
+                    .index_boxs .text_message .basic_content .date_one .marketing p {
+                        width: 100%;
+                        height: 20px;
+                        font-size: 14px;
+                        color: #666666;
+                    }
+
+                    .index_boxs .text_message .basic_content .date_one .marketing h1 {
+                        width: 100%;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 18px;
+                        color: #04ACE5;
+                    }
+
+                .index_boxs .text_message .basic_content .date_one .xingyou {
+                    width: 50px;
+                    height: 30px;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                }
+
+                    .index_boxs .text_message .basic_content .date_one .xingyou i {
+                        display: inline-block;
+                        width: 50px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 16px;
+                        color: #999999;
+                        text-align: right;
+                    }
+
+            .index_boxs .text_message .basic_content :last-child {
+                margin-right: 0;
+            }
+
+    .index_boxs .basic_infor {
+        width: 96%;
+        height: 130px;
+        overflow: hidden;
+        background: #ffffff;
+        margin-top: 15px;
+    }
+
+        .index_boxs .basic_infor li {
+            width: 16%;
+            height: 130px;
+            float: left;
+            position: relative;
+        }
+
+            .index_boxs .basic_infor li h1 {
+                width: 100%;
+                height: 65px;
+                line-height: 95px;
+                font-size: 24px;
+                color: #393D49;
+                text-align: center;
+            }
+
+            .index_boxs .basic_infor li p {
+                width: 100%;
+                height: 50px;
+                line-height: 45px;
+                font-size: 14px;
+                color: #666666;
+                text-align: center;
+            }
+
+            .index_boxs .basic_infor li span {
+                width: 1px;
+                height: 56px;
+                background: #eee;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 37px;
+            }
+
+    .index_boxs .apijkou {
+        width: 96%;
+        height: 126px;
+        background: #ffffff;
+        margin-top: 15px;
+        padding: 20px 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .index_boxs .apijkou .api_left {
+            width: 47px;
+            height: 126px;
+            float: left;
+            margin: 0 15px;
+        }
+
+            .index_boxs .apijkou .api_left img {
+                width: 47px;
+                height: 126px;
+            }
+
+        .index_boxs .apijkou .api_right {
+            width: 80%;
+            height: 126px;
+            float: left;
+        }
+
+            .index_boxs .apijkou .api_right h1 {
+                width: 100%;
+                height: 30px;
+                font-size: 14px;
+                color: #000;
+            }
+
+            .index_boxs .apijkou .api_right p {
+                width: 100%;
+                height: 24px;
+                line-height: 20px;
+                font-size: 14px;
+                color: #444;
+            }
+
+                .index_boxs .apijkou .api_right p span {
+                    color: #149FFD;
+                    font-size: 20px;
+                    margin-right: 10px;
+                    float: left;
+                    line-height: 24px;
+                }
+
+        .index_boxs .apijkou .document {
+            width: 80px;
+            height: 30px;
+            background: #169FFD;
+            border-radius: 3px;
+            position: absolute;
+            right: 30px;
+            bottom: 25px;
+        }
+
+            .index_boxs .apijkou .document a {
+                display: block;
+                width: 80px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 3px;
+                color: #ffffff;
+                text-align: center;
+                font-size: 12px;
+            }
+
+    .index_boxs .date_analysis {
+        width: 96%;
+        height: auto;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+
+        .index_boxs .date_analysis .analysis_left {
+            width: 100%;
+            height: 470px;
+            float: left;
+            margin-right: 1.5%;
+        }
+
+            .index_boxs .date_analysis .analysis_left img {
+                width: 100%;
+                height: 285px;
+            }
+
+        .index_boxs .date_analysis .analysis_right {
+            width: 50%;
+            height: 470px;
+            float: left;
+            padding-top: 43px;
+        }
+
+            .index_boxs .date_analysis .analysis_right img {
+                width: 100%;
+                height: 285px;
+            }
+
+#sobill {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+    .index_boxs .account_bill .bill_right .bulletin_list li a span {
+        float: left;
+        width: 81px;
+        margin-right: 10px;
+    }
+
+    .index_boxs .account_bill .bill_right .bulletin_list li a p {
+        width: 173px;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 1610px) {
+
+    .index_boxs .account_bill .bill_right .bulletin_list li a p {
+        width: 207px;
+    }
+}
+@media screen and (max-width: 1440px) {
+
+    .index_boxs .account_bill .bill_right .bulletin_list li a p {
+        width: 169px;
+    }
+}
+@media screen and (max-width: 1366px) {
+
+    .index_boxs .account_bill .bill_right .bulletin_list li a p {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 1280px) {
+
+    .index_boxs .account_bill .bill_right .bulletin_list li a p {
+        width: 138px;
+    }
+}
+@media screen and (max-width: 1152px) {
+
+    .index_boxs .account_bill .bill_right .bulletin_list li a p {
+        width: 111px;
+    }
+}
+@media screen and (max-width: 1024px) {
+
+    .index_boxs .account_bill .bill_right .bulletin_list li a p {
+        width: 85px;
+    }
+}

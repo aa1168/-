@@ -1,0 +1,444 @@
+var element;
+layui.use(['form', 'layer', "laydate", "element", "upload"], function () {
+    $ = layui.jquery;
+    var form = layui.form;
+    var layer = layui.layer;
+    element = layui.element;
+    var laydate = layui.laydate;
+    var upload = layui.upload;
+    var proService = function () {
+        return new Promise(function (resolve, reject) {
+            $.ajax({
+                type: "post",
+                url: "/home/GetCusService",
+                dataType: 'json'
+            }).done(function (data) {
+                resolve(data);
+            });
+        });
+    }
+    proService().then(function (data) {
+        if (data) {
+            $('.cur-user-photo').attr('src', data.UserPhoto);
+            if (data.IsParent == 1) {
+                $('.top_youce').css('display', 'none');
+                $('.peoson_right').css('display', 'none');
+                $('.bill_right').css('display', 'none');
+                $('.index_boxs .peosonal_infor .peoson_left').css('width', '100%');
+                $('.index_boxs .account_bill .bill_left').css('width', '100%');
+            }
+            else {
+                $('.top_youce').css('display', '');
+                $('.peoson_right').css('display', '');
+                $('.bill_right').css('display', '');
+                $('.index_boxs .peosonal_infor .peoson_left').css('width', '72%');
+                $('.index_boxs .account_bill .bill_left').css('width', '72%');
+            }
+        }
+    });
+    //通知公告
+    var proNotice = function (top) {
+        return new Promise(function (resolve, reject) {
+            $.ajax({
+                type: "post",
+                url: "/Product/NoticeInfoList",
+                data: { top: top },
+                dataType: 'json'
+            }).done(function (data) {
+                resolve(data);
+            });
+        });
+    }
+    //产品列表
+    var proProduct = function () {
+        return new Promise(function (resolve, reject) {
+            $.ajax({
+                type: "post",
+                url: "/Product/GetProduct",
+                dataType: 'json'
+            }).done(function (data) {
+                resolve(data);
+            });
+        });
+    }
+    //充值，积分
+    var proReCharge = function () {
+        return new Promise(function (resolve, reject) {
+            $.ajax({
+                type: "post",
+                url: "/Product/ReChargeSum",
+                dataType: 'json'
+            }).done(function (data) {
+                resolve(data);
+            });
+        });
+    }
+    //认证信息
+    var proAuth = function () {
+        return new Promise(function (resolve, reject) {
+            $.ajax({
+                type: "post",
+                url: "/Authentication/GetAuthentication",
+                dataType: 'json'
+            }).done(function (data) {
+                resolve(data);
+            });
+        });
+    }
+
+    proNotice(8).then(function (data) {
+        if (data.data.length > 0) {
+            var html = "";
+            $.each(data.data, function (i, t) {
+                var date = KLW_Tools.JsonToDateTimeymd(t.DCREATETIME);
+                var reg = t.CTITLE.replace(/<\/?.+?>/g, "");
+                var content = reg.replace(/ /g, "");//dds为得到后的内容
+                var color = '';
+                if (i == 0) {
+                    color = ' style="color:#e4393c;" ';
+                }
+                else {
+                    color = '';
+                }
+                if (content.length > 30) {
+                    html += '<li onclick="new_click(' + t.ID + ')" ><a href="#"><span' + color + '>[' + date + ']</span><p' + color + '>' + content.substring(0, 30) + '...</p></a></li>';
+                }
+                else {
+                    html += '<li onclick="new_click(' + t.ID + ')" ><a href="#"><span' + color + '>[' + date + ']</span><p' + color + '>' + content + '</p></a></li>';
+                }
+            });
+            $("#notice").html(html);
+        }
+    });
+
+    proProduct().then(function (json) {
+        $("#pro_count").text(json.length);
+        $.each(json, function (i, data) {
+            if (data.CPRODUCT != '') {
+                //已启用已停用
+                $("#" + data.CPRODUCT + " .product_head span").text("已启用").css("color", "#A4B3DB");
+                //是否激活
+                $("#" + data.CPRODUCT + " .goapplication a").attr("data-active", "1");
+            }
+        });
+    });
+
+    proReCharge().then(function (data) {
+        $("#balance").text(data.balance);
+        //if (data.balance > 0) {
+        //    $('#btn_buy').css('display', '');
+        //    $('#btn_buy2').css('display', '');
+        //    $('#btn_exchange').css('display', '');
+        //}
+        //else {
+        //    $('#btn_buy').css('display', 'none');
+        //    $('#btn_buy2').css('display', 'none');
+        //    $('#btn_exchange').css('display', 'none');
+        //}
+        $("#recharge").text(data.recharge);
+        $("#score").text(data.score);
+        $("#bill_count").text(data.billcount);
+    });
+
+    proAuth().then(function (data) {
+        $("#lbl_name").text(data.name);
+        if (data.auth == 1) {
+            $('#icon_rz').css('display', '');
+            $('#name_rz').css('display', '');
+            $('#icon_wrz').css('display', 'none');
+            $('#name_wrz').css('display', 'none');
+            $('#btn_rz').css('display', 'none');
+        }
+        else {
+            $('#icon_rz').css('display', 'none');
+            $('#name_rz').css('display', 'none');
+            $('#icon_wrz').css('display', '');
+            $('#name_wrz').css('display', '');
+            $('#btn_rz').css('display', '');
+        }
+        $('#hid_type').val(data.type);
+        $('#hid_auth').val(data.auth);
+    });
+
+    //认证
+    $("#btn_rz").click(function () {
+        var type = $("#hid_type").val();
+        var url = "";
+        var id = "";
+        var title = "";
+        var element = parent.layui.element;
+        //if (type == "1") {
+        id = "75";
+        url = "/Authentication/PersonalAuthentication";
+        title = "认证信息";
+        for (var i = 0; i < $('.x-iframe').length; i++) {
+            if ($('.x-iframe').eq(i).attr('src') == url) {
+                element.tabChange('x-tab', id);
+                return;
+            }
+        };
+        res = element.tabAdd('x-tab', {
+            title: title//用于演示
+            , content: '<iframe frameborder="0" src="' + url + '" class="x-iframe"></iframe>'
+            , id: id
+        });
+        element.tabChange('x-tab', id);
+    });
+
+    //点击产品进入对应总览页
+    $(".goapplication a").click(function () {
+        var dataId = $(this).attr("data-type");
+        //如果是文字短信直接进入不判断认证信息
+        if (dataId == 'chat') {
+            var url = $(this).attr("data-href");
+            var title = "产品总览";
+            var id = $(this).attr("data-id");
+            var element = parent.layui.element;
+            parent.openTab(url, id, element, title);
+            //默认显示对应二级菜单
+            var lnkid = $(this).attr("data-menu");
+            parent.$("#" + lnkid).parent("li").addClass("moren_box").siblings("li").removeClass("moren_box");
+            parent.$("#" + lnkid).addClass("moren_box").parent("li").siblings("li").find("a").removeClass("moren_box");
+            parent.$(".leftcontent .right_baohan").hide();
+            parent.$(".menu_box a").css("color", "#8c99ad");
+            parent.$("#" + lnkid).css("color", "#fff");
+            parent.$(".site-demo-title").css("left", "334px");
+            parent.$(".newleft").css("display", "");
+            parent.$(".amxl_content").hide();
+            parent.$("." + lnkid).show();
+        } else {
+            //判断是否已认证
+            if ($("#hid_auth").val() == "1") {
+                var active = $(this).attr("data-active");
+                var type = $(this).attr("data-type");
+
+                if (active == "0") {
+                    layer.confirm('您的浏览器插件版本过低，暂不支持该服务，请下载最新安全插件！', { icon: 0, title: '系统提示', btn: ['关闭'], closeBtn: 0 }, function (index) {
+                        layer.close(index);
+                    });
+                }
+                else {
+
+                    var url = $(this).attr("data-href");
+                    var title = "产品总览";
+                    var id = $(this).attr("data-id");
+                    var element = parent.layui.element;
+                    parent.openTab(url, id, element, title);
+                    //默认显示对应二级菜单
+                    var lnkid = $(this).attr("data-menu");
+                    parent.$("#" + lnkid).parent("li").addClass("moren_box").siblings("li").removeClass("moren_box");
+                    parent.$("#" + lnkid).addClass("moren_box").parent("li").siblings("li").find("a").removeClass("moren_box");
+                    parent.$(".leftcontent .right_baohan").hide();
+                    parent.$(".menu_box a").css("color", "#8c99ad");
+                    parent.$("#" + lnkid).css("color", "#fff");
+                    parent.$(".site-demo-title").css("left", "334px");
+                    parent.$(".newleft").css("display", "");
+                    parent.$(".amxl_content").hide();
+                    parent.$("." + lnkid).show();
+                }
+
+            } else {
+                layer.msg("您还未进行认证,请先认证", { icon: 7, time: 1000 }, function () {
+                    title = "认证信息";
+                    id = "75";
+                    url = "/Authentication/PersonalAuthentication";
+                    var element = parent.layui.element;
+                    parent.openTab(url, id, element, title);
+                });
+            }
+        }
+
+    });
+    //单击头像进入用户资料
+    $(".touxing").click(function () {
+        var element = parent.layui.element;
+        var url = "/System/userinfo";
+        var id = "71";
+        var title = "基础资料";
+        parent.openTab(url, id, element, title);
+    });
+    //去充值
+    $("#btn_money").click(function () {
+        if ($("#isoem").val() == "1") {
+            layer.msg("您好请联系客服进行充值", { icon: 5 });
+        } else {
+            var element = parent.layui.element;
+            var ret = false;
+            ret = auth(element);
+            if (ret == false) {
+                return false;
+            } else {
+                var element = parent.layui.element;
+                var url = "/Alipay/PayVersion2";
+                var title = "在线充值";
+                parent.openTab(url, "220", element, title);
+            }
+
+        }
+    });
+    //去兑换
+    $("#btn_exchange").click(function () {
+        var element = parent.layui.element;
+        var url = "/IntegralProduct/Index";
+        var title = "礼品列表";
+        parent.openTab(url, "200", element, title);
+    });
+
+    //订单明细
+    $(".sobill").click(function () {
+        var element = parent.layui.element;
+        var url = "/Balance/TurnOver";
+        var id = "995";
+        var title = "订单详情";
+        parent.openTab(url, id, element, title);
+    });
+
+    $('#btn_buy').click(function () {
+        var element = parent.layui.element;
+        var ret = false;
+        ret = auth(element);
+        if (ret == false) {
+            return false;
+        } else {
+            var element = parent.layui.element;
+            var url = "/Alipay/PayList";
+            var title = "购买短信";
+            parent.openTab(url, "220", element, title);
+        }
+
+
+    });
+    $('#btn_buy2').click(function () {
+        var element = parent.layui.element;
+        var ret = false;
+        ret = auth(element);
+        if (ret == false) {
+            return false;
+        } else {
+            var element = parent.layui.element;
+            var url = "/Alipay/PayVersion3";
+            var title = "充值短信";
+            parent.openTab(url, "221", element, title);
+        }
+
+
+    });
+});
+function new_click(id) {
+    $.ajax({
+        type: "post",
+        url: "/Product/NoticeInfoModel",
+        data: { id: id },
+        dataType: 'json',
+        success: function (json) {
+            if (json) {
+                var date = new Date(json.DCREATETIME);
+                var html = '<div class="x-body noticeinfo" style="padding: 10px;"><h3 class="h3" style="text-align:center;font-size: 20px;font-weight: bold;">' + json.CTITLE + '</h3><br/>' + json.CCONTENT + '<br/></div>';
+                layer.open({
+                    type: 1,
+                    title: '通知公告',
+                    area: ['580px', '761px'],
+                    fix: false,
+                    maxmin: false,
+                    resize: false,
+                    shadeClose: true,
+                    content: html
+                });
+            }
+        }
+    });
+}
+
+function auth(element) {
+    var url = '';
+    var id = '';
+    var title = '';
+    var ret = false;
+    $.ajax({
+        type: "post",
+        url: "/Customer/CustomerState",
+        async: false,
+        dataType: 'json',
+        success: function (data) {
+            if (data) {
+                if (data.ID > 0) {
+                    $.ajax({
+                        type: "post",
+                        url: "/Authentication/GetAuthentication",
+                        async: false,
+                        dataType: 'json',
+                        success: function (json) {
+                            if (json.auth == "0") {
+                                layer.alert("您还未进行认证,请先认证", { icon: 7, btn: ['去认证'], title: '提示' }, function (index) {
+                                    layer.close(index);
+                                    title = "认证信息";
+                                    id = "75";
+                                    url = "/Authentication/PersonalAuthentication";
+                                    openTab(url, id, element, title);
+                                });
+
+                            }
+                            else {
+                                ret = true;
+                            }
+                        },
+                        complete: function () {
+                        },
+                        error: function (eor) {
+                        }
+                    });
+                }
+                else {
+                    layer.msg("账户失效，请重新登录", { icon: 7, time: 2000 });
+                }
+            }
+            else {
+                layer.msg("账户失效，请重新登录", { icon: 7, time: 2000 });
+            }
+        },
+        complete: function () {
+        },
+        error: function (eor) {
+        }
+    });
+    return ret;
+}
+function openTab(url, id, element, title) {
+    element.tabDelete('x-tab', id);
+    for (var i = 0; i < $('.x-iframe').length; i++) {
+        var iframe_src = $('.x-iframe').eq(i).attr('src');
+        if (iframe_src.indexOf('?') > 0) {
+            iframe_src = iframe_src.substring(0, iframe_src.indexOf('?'));
+        }
+        if (iframe_src == url) {
+            element.tabChange('x-tab', id);
+            return;
+        }
+    };
+    res = element.tabAdd('x-tab', {
+        title: title//用于演示
+        , content: '<iframe frameborder="0" src="' + url + '" class="x-iframe"></iframe>'
+        , id: id
+    });
+    element.tabChange('x-tab', id);
+}
+Date.prototype.format = function dateFormat(fmt) {
+    var o = {
+        "M+": this.getMonth() + 1,                 //月份 
+        "d+": this.getDate(),                    //日 
+        "h+": this.getHours(),                   //小时 
+        "m+": this.getMinutes(),                 //分 
+        "s+": this.getSeconds(),                 //秒 
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+        "S": this.getMilliseconds()             //毫秒 
+    };
+    if (/(y+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    }
+    for (var k in o) {
+        if (new RegExp("(" + k + ")").test(fmt)) {
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        }
+    }
+    return fmt;
+}

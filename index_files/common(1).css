@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+::-moz-focus-inner {padding:0;border:0}
+*{padding:0px; margin:0px; outline:none}
+ul,li{ padding:0; padding:0; list-style:none;}
+img,a{ border:none; outline:none;}
+a{text-decoration:none;}
+a{outline:none; text-decoration:none; color:#666}
+a:hover{ text-decoration:none; color:#c81623}
+.clear{font-size:0; clear:both; overflow:hidden; height:0;zoom:1;}
+.clear:after{content:"\20";display:block;clear:both;}
+.clearfix:after{ content:""; display:block; height:0; font-size:0; clear:both; visibility:hidden}
+*html .clearfix{ zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+* html,* html body{background-image:url(about:blank);background-attachment:fixed}
+body{ background:#F6F8F7;font-family:"微软雅黑",Helvetica, HiraginoSansGB-W3 !important;font-size: 12px;}
+em, i {font-style: normal;}
+input{ font-family:"微软雅黑",Helvetica, HiraginoSansGB-W3 !important; border:0px;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+strong{padding: 0;margin: 0;}
+
+@font-face {font-family: 'iconfont';
+    src: url('/images/product/images/icon/iconfont.eot'); /* IE9*/
+    src: url('/images/product/images/icon/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/images/product/images/icon/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('/images/product/images/icon/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('/images/product/images/icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{font-family:"iconfont" !important;font-style:normal;}
+
+/*首页公共头部*/
